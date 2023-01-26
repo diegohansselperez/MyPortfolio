@@ -1,0 +1,95 @@
+:root {
+    --azul-marino: #0827c9;
+    --azul-turquesa: #14cdb3;
+    --bottones: #c90888;
+    --font-family:'Montserrat', sans-serif;
+  }
+
+.especialidades {
+    display: flex;
+    width: 100vw;
+    height: 110vh;
+}
+
+.monster {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-self: center;
+    margin-left: 30px;
+}
+
+.monster ul {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(auto-fill, 200px);
+    row-gap: 4rem;
+    align-content: center;
+    background-color: #0827c9;
+    background-image: linear-gradient(160deg, #0827c9 0%, #80D0C7 100%); 
+    border-radius: 30px;
+}
+
+.monster ul li {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.about_info {
+    display: grid;
+    align-self: center;
+    padding: 3em;
+    /* box-shadow: 0 3px 5px #242424; */
+}
+
+.about_info h2 {
+    color: #ccd6f6;
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color:var(--azul-turquesa);
+    margin-top: 3px;
+    margin-bottom: 3em; 
+}
+
+.list_programs {
+    display: grid;
+    font-family: 'Lato', sans-serif;
+    grid-template-columns: repeat(2, 130px);
+    list-style-position: inside;
+    margin-top: 3em;
+}
+
+.list_programs li {
+    list-style: none;
+    color:#ccd6f6;
+}
+.list_programs li::before {
+    content:'</> ';
+    font-size: 13px;
+    color: #14cdb3;
+    text-align: center;
+}
+
+.download_rm{
+    color: white;
+    padding: 10px 20px;
+    background-color: var(--bottones);
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.download_rm:hover {
+    background-color: var(--azul-marino);
+    box-shadow: none;
+    transition: ease-in .2s;
+}
+
+.especialidades p {
+    margin-bottom: 1em;
+    line-height: 23px;
+}

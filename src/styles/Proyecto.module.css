@@ -1,0 +1,110 @@
+:root {
+    --azul-marino: #0827c9;
+    --azul-turquesa: #14cdb3;
+    --bottones: #c90888;
+  }
+.portafolio {
+    width: 100%;
+    height: 100%;
+    background-color: #0827c9;
+    background-image: linear-gradient(45deg, #0827c9 0%, #80D0C7 100%);
+    color: white;
+}
+.portafolio_headings {
+    width: 100vw;
+    padding: 5em;
+}
+
+.portafolio_headings h2 {
+    font-size: 2em;
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color:var(--azul-turquesa);
+    margin-top: 3px;
+    margin-bottom: 2em;
+}
+
+.portafolio .cards_container {
+    width: 90%;
+    height: 120vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    color: white;
+    width: 300px;
+    height: 380px;
+    background-color: var(--azul-turquesa);
+    border-radius: 15px;
+}
+
+.card_img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 200px;
+    background-size: cover;
+    align-content: center;
+}
+
+.original {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
+
+.card_title {
+    padding: 20px;
+    text-align: center;
+}
+
+.card_projects_links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card_projects_links a {
+    color: white;
+    text-decoration: none;
+}
+
+.card_projects_links i {
+    font-size: 1.5em;
+}
+
+.card .project_details {
+    padding: 10px 20px;
+    background-color:var(--bottones);
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    margin: 1.5em;
+}    
+
+.card .project_details:hover {
+    background-color: var(--azul-marino);
+    color: white;
+    box-shadow: none;
+    transition: ease-in .3s;
+}
+
+.card .project_details a {
+    text-decoration: none;
+    color: white;
+    text-transform:uppercase;
+}
+
+.project_details_content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}
