@@ -63,8 +63,7 @@ export function Skills() {
           tecnologias. Empeze en la escuela de Desarrollo Web de Platzi, en
           donde me eh mantenido durante 1 año entero, junto a la documentacion
           oficial de cada programa que uso. Simpre con el temple de aprender lo
-          que no entiendo en el momento y no parar de aprender(que es el lema
-          que tengo simpre presente).
+          que no entiendo en el momento y no parar de aprender.
         </p>
         <ul className={style.list_programs}>
           <li>HTML</li>
