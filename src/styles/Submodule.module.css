@@ -1,0 +1,35 @@
+.btn {
+    font-size: small;
+    padding: 10px 20px;
+    background-color: #c90888;
+    color: #fff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    /* border: none; */
+    text-decoration: none;
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 3px #c90888;
+}
+
+.btn:hover {
+    box-shadow: 0 0 7px #c90888;
+    background-color: #8a085f;
+    transition: ease-in-out 0.3s;
+}
+
+.social_network {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+.social_network a {
+    color: var(--azul-turquesa);
+}
+
+.social_network a:hover {
+    transform: translateY(-4px);
+    transition: transform 0.3s cubic-bezier(0.12, 0, 0.39, 0);
+    opacity: .7;
+}
