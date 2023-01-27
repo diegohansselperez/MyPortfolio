@@ -1,5 +1,4 @@
 import style from '../styles/Proyecto.module.css'
-import post1 from '../assets/img/post1.png'
 import imagen from '../Imegenes.js'
 import { Botton } from './Submodules';
 
