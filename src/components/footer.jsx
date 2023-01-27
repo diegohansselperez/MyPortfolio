@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import style from '../styles/Footer.module.css'
-import { Header } from './Header'
 import { SocialItems } from './Submodules'
 
 export function Footer() {
