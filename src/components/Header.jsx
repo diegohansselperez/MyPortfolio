@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { SocialItems } from "./Submodules";
-import style from "../styles/header.module.css";
-import Curriculum from "../pdf/Diego_Hanssel_Perez.pdf"
+import style from "../styles/Header.module.css";
+import Curriculum from "../pdf/Diego_Hanssel_Perez.pdf";
 
 export function Header() {
   return (
