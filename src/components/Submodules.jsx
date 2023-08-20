@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom'
+/* import { Link } from 'react-router-dom' */
 import style from '../styles/Submodule.module.css'
 
 export function Botton(props) {
     return (
-        <Link onClick target="_blank" to={props.to} className={style.btn} >
+        <a onClick target="_blank" href={props.link} className={style.btn} >
             {props.text}
-        </Link>
+        </a>
     )
 }
 
