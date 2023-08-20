@@ -6,10 +6,10 @@ export function AboutMe() {
     <>
       <body>
         <aside className={style.aside_contain}>
-          <ul class={style.menu}>
+          <ul className={style.menu}>
             <Link className={style.link} to="/">
               <li>
-                <i class="bx bx-left-arrow-alt bx-sm"></i>Home
+                <i className="bx bx-left-arrow-alt bx-sm"></i>Home
               </li>
             </Link>
           </ul>
