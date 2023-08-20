@@ -19,7 +19,7 @@ export function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink className={style.navbar_li} to="/aboutme">
+            <NavLink className={style.navbar_li} to="/aboutme" onClick>
               About me
             </NavLink>
           </li>

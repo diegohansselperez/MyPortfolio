@@ -4,13 +4,11 @@ import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { Proyectos } from "./Proyectos";
 import { Skills } from "./Skills";
-import { AboutMe } from "../pages/aboutMe";
+import { AboutMe } from "../pages/Aboutme.jsx";
 
 export function Home() {
     return (
-       <>   <Routes>
-                <Route path="/aboutme" element={<AboutMe />} />
-            </Routes>
+       <>   
             <Header />
             <Skills />
             <Proyectos />
