@@ -27,9 +27,10 @@ export function Contact() {
                 placeholder="Escriba su commentario aqui..."
                 rows="10"
                 style={{resize:"none", height: "150px"}}
+                
             ></textarea>
           </label>
-          <div class="mb-3">
+          <div >
             <input className={style.btn_submit} type="submit" />
             <input
               type="hidden"

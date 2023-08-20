@@ -5,8 +5,10 @@
   }
 
 #wrapper{
+    display: flex;
+    flex-direction: column;
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     background-color: #0827c9;
     background-image: linear-gradient(160deg, #0827c9 0%, #80D0C7 100%);    
     color: white;
@@ -14,8 +16,9 @@
 
 .navbar {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1em 2em;
 }
 
 .brand {
@@ -59,16 +62,16 @@
 .main {
     margin: 0 auto;
     width: 85vw;
-    height: 50vw;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    align-items: center;
+    place-items: center;
 }
 
-main .guitarra {
+main .fotoperfil {
     border: 5px solid var(--azul-turquesa);
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 90%;
     background-image: url('../assets/img/img_con_zoom.jpg');
     background-size: cover;
     background-position: center;

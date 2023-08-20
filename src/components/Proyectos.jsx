@@ -19,10 +19,10 @@ export function Proyectos(){
                 </div>
                 <div className={style.card_projects_links}>
                     <a href="https://github.com/diegohansselperez" target="_blank">
-                        <i class="fa-brands fa-github fa-lg"></i>
+                        <i className="fa-brands fa-github fa-lg"></i>
                     </a>
                     <a href="https://diegohansselperez.github.io/batatabit.mobile/">
-                        <i class="fa-solid fa-code fa-lg"></i>
+                        <i className="fa-solid fa-code fa-lg"></i>
                     </a>
                 </div>
                 <div className={style.project_details_content}>
@@ -38,10 +38,10 @@ export function Proyectos(){
                 </div>
                 <div className={style.card_projects_links}>
                     <a href="https://github.com/diegohansselperez" target="_blank">
-                        <i class="fa-brands fa-github fa-lg"></i>
+                        <i className="fa-brands fa-github fa-lg"></i>
                     </a>
                     <a href="https://github.com/diegohansselperez/yearsale.github.io">
-                        <i class="fa-solid fa-code fa-lg"></i>
+                        <i className="fa-solid fa-code fa-lg"></i>
                     </a>
                 </div>
                 <div className={style.project_details_content}>
@@ -57,10 +57,10 @@ export function Proyectos(){
                 </div>
                 <div className={style.card_projects_links}>
                     <a href="https://github.com/diegohansselperez" target="_blank">
-                        <i class="fa-brands fa-github fa-lg"></i>
+                        <i className="fa-brands fa-github fa-lg"></i>
                     </a>
                     <a href="https://github.com/diegohansselperez/batatabit.mobile">
-                        <i class="fa-solid fa-code fa-lg"></i>
+                        <i className="fa-solid fa-code fa-lg"></i>
                     </a>    
                 </div>
                 <div className={style.project_details_content}>
@@ -76,10 +76,10 @@ export function Proyectos(){
                 </div>
                 <div className={style.card_projects_links}>
                     <a href="https://github.com/diegohansselperez" target="_blank">
-                        <i class="fa-brands fa-github fa-lg"></i>
+                        <i className="fa-brands fa-github fa-lg"></i>
                     </a>
                     <a href="https://github.com/diegohansselperez/homework_list.github.io">
-                        <i class="fa-solid fa-code fa-lg"></i>
+                        <i className="fa-solid fa-code fa-lg"></i>
                     </a>
                 </div>
                 <div className={style.project_details_content}>
@@ -95,10 +95,10 @@ export function Proyectos(){
                 </div>
                 <div className={style.card_projects_links}>
                     <a href="https://github.com/diegohansselperez" target="_blank">
-                        <i class="fa-brands fa-github fa-lg"></i>
+                        <i className="fa-brands fa-github fa-lg"></i>
                     </a>
                     <a href="#">
-                        <i class="fa-solid fa-code fa-lg"></i>
+                        <i className="fa-solid fa-code fa-lg"></i>
                     </a>
                 </div>
             </div>
