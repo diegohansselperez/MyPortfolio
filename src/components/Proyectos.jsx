@@ -15,7 +15,7 @@ export function Proyectos(){
                     <img className={style.original} src={imagen[0].img1} alt={imagen[0].alt} />
                 </div>
                 <div className={style.card_title}>
-                    <h2>Batata-Bit</h2>
+                    <h2>The Literary Corner</h2>
                 </div>
                 <div className={style.card_projects_links}>
                     <a href="https://github.com/diegohansselperez" target="_blank">
@@ -26,7 +26,7 @@ export function Proyectos(){
                     </a>
                 </div>
                 <div className={style.project_details_content}>
-                    <Botton text='proyect details' to="https://www.google.com/"/>
+                    <Botton text='proyect details' link="https://pf-henry-bookstore.vercel.app/"/>
                 </div>    
             </div>
             <div className={style.card}>
@@ -64,7 +64,7 @@ export function Proyectos(){
                     </a>    
                 </div>
                 <div className={style.project_details_content}>
-                        <Botton text='proyect details' />
+                        <Botton text='proyect details' link='https://diegohansselperez.github.io/bearbadstudio.github.io/' />
                 </div>  
             </div>
             <div className={style.card}>
@@ -72,7 +72,7 @@ export function Proyectos(){
                     <img className={style.original} src={imagen[2].img3} alt={imagen[2].alt} />
                 </div>
                 <div className={style.card_title}>
-                    <h2>HomeWork-List.io</h2>
+                    <h2>Homework List</h2>
                 </div>
                 <div className={style.card_projects_links}>
                     <a href="https://github.com/diegohansselperez" target="_blank">
@@ -83,25 +83,11 @@ export function Proyectos(){
                     </a>
                 </div>
                 <div className={style.project_details_content}>
-                    <Botton text='proyect details' />
+                    <Botton text='proyect details' link='https://diegohansselperez.github.io/homework_list.github.io/' />
                 </div>    
             </div>
-            <div className={style.card}>
-                <div className={style.card_img}>
-                    <img className={style.original} src={imagen[4].img5} alt={imagen[4].alt} />
-                </div>
-                <div className={style.card_title}>
-                    <h2>My Porfolio</h2>
-                </div>
-                <div className={style.card_projects_links}>
-                    <a href="https://github.com/diegohansselperez" target="_blank">
-                        <i className="fa-brands fa-github fa-lg"></i>
-                    </a>
-                    <a href="#">
-                        <i className="fa-solid fa-code fa-lg"></i>
-                    </a>
-                </div>
-            </div>
+           
+      
         </div>
     </div>
     );

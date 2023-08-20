@@ -24,7 +24,7 @@ export function Contact() {
             <textarea
                 name="comment"
                 required
-                placeholder="Escriba su commentario aqui..."
+                placeholder="Escribe un mensaje..."
                 rows="10"
                 style={{resize:"none", height: "150px"}}
                 
