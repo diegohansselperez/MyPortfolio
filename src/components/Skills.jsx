@@ -8,37 +8,37 @@ export function Skills() {
           <li>
             <i
               style={{ color: "#e44d26", fontSize: "9rem" }}
-              class="bx bxl-html5"
+              className="bx bxl-html5"
             ></i>
           </li>
           <li>
             <i
               style={{ color: "#1b73ba", fontSize: "9rem" }}
-              class="bx bxl-css3"
+              className="bx bxl-css3"
             ></i>
           </li>
           <li>
             <i
               style={{ color: "#e9ca32", fontSize: "9rem" }}
-              class="bx bxl-javascript"
+              className="bx bxl-javascript"
             ></i>
           </li>
           <li>
             <i
               style={{ color: "#00d8ff", fontSize: "9rem" }}
-              class="bx bxl-react"
+              className="bx bxl-react"
             ></i>
           </li>
           <li>
             <i
               style={{ color: "#de4c36", fontSize: "9rem" }}
-              class="bx bxl-git"
+              className="bx bxl-git"
             ></i>
           </li>
           <li>
             <i
               style={{ color: "#7611ed", fontSize: "9rem" }}
-              class="bx bxl-bootstrap"
+              className="bx bxl-bootstrap"
             ></i>
           </li>
         </ul>
@@ -68,12 +68,18 @@ export function Skills() {
         <ul className={style.list_programs}>
           <li>HTML</li>
           <li>CSS</li>
+          <li>TypeScript</li>
           <li>JavaScript</li>
-          <li>ReactJs</li>
+          <li>React.js</li>
           <li>Bootstrap</li>
           <li>Git</li>
-          <li>Node Js</li>
-          <li>ViteJs</li>
+          <li>Github</li>
+          <li>Node.js</li>
+          <li>Redux</li>
+          <li>MongoDB</li>
+          <li>PostgreSQL</li>
+          <li>Sequelize</li>
+          <li>Vite</li>
         </ul>
       </div>
     </div>

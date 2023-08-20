@@ -66,6 +66,7 @@
 .list_programs li {
     list-style: none;
     color:#ccd6f6;
+    font-size: 20px;
 }
 .list_programs li::before {
     content:'</> ';

@@ -12,7 +12,7 @@ export function Footer() {
         <SocialItems />
         <div>
             <Link className={style.hacia_arriba} to="#home_nav"
-            onClick >Ir a el Comienzo</Link>  
+            onClick >Ir al Comienzo</Link>  
         </div> 
     </footer>
     )

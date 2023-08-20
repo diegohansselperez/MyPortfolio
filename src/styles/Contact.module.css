@@ -61,6 +61,10 @@ input {
     border-bottom: 1px solid  var(--azul-marino) ;
 }
 
+input::placeholder{
+    color: white;
+}
+
 textarea {
     height: 20%;
     background: transparent;
@@ -68,6 +72,10 @@ textarea {
     padding: 1.5em;
     color: #fff;
     border: 1px solid var(--azul-marino) ;
+}
+
+textarea::placeholder{
+    color: white;
 }
 
 .btn_submit {
