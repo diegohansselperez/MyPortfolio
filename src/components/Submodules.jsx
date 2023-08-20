@@ -15,7 +15,7 @@ export function SocialItems() {
             <a href="https://www.linkedin.com/in/hansselperez/" target="_blank"><i className="fa-brands fa-linkedin 
             fa-2x"></i></a>
             <a href="https://www.instagram.com/diegohanssel_perez/" target="_blank"><i className="fa-brands fa-instagram-square fa-2x"></i></a>
-            <a href="https://twitter.com/HansselPerez4?t=4CC3Nm_ANvTOdng0d1DLTg&s=03" target="_blank"><i className="fa-brands fa-twitter-square fa-2x"></i></a>   
+            <a href="https://github.com/diegohansselperez" target="_blank"><i className="fa-brands fa-github-square fa-2x"></i></a>   
         </div>
     )
 }
