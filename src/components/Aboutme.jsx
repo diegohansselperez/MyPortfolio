@@ -23,7 +23,7 @@ export function AboutMe() {
                   <span>About Me</span>
                 </p>
               </div>
-              <div className={style.divider}></div>
+              {/* <div className={style.divider}></div> */}
               <div className={style.text_container}>
                 <p>
                   ¡Hola! Soy Diego, un Desarrollador Full-Stack apasionado por
@@ -33,20 +33,21 @@ export function AboutMe() {
                   aprendiendo programación en Platzi durante más de un año, una
                   destacada escuela de programación en LATAM.
                 </p>
-                <br />
+
                 <p>
                   Adquiri mas experiencia durante mis estudios en el bootcamp de
                   SoyHenry💛, donde durante 4 meses tuve la oportunidad de
                   compartir conocimientos con muchos estudiantes y profesores.
                   La enseñanza fue constante y exigente, lo cual me permitió
                   adquirir sólidos fundamentos en Javascript Avanzado, React,
-                  Express, PostgresSQL, Sequelize y Git en mi proyecto final.Mi
-                  enfoque en el trabajo es constante y pulcro, me encanta
+                  Express, PostgresSQL, Sequelize y Git en mi proyecto final.
+                </p>
+                <p>
+                  Mi enfoque en el trabajo es constante y pulcro, me encanta
                   colaborar y compartir ideas con otros para un aprendizaje en
                   equipo exitoso. Además, tengo habilidades en comunicación
                   efectiva, liderazgo, trabajo en equipo y motivación.
                 </p>
-                <br />
                 <p>
                   Soy perfeccionista por naturaleza, lo que me lleva a dedicar
                   tiempo a resolver errores y mejorar constantemente. Me

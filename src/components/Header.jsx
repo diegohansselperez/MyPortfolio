@@ -5,7 +5,7 @@ import Curriculum from "../pdf/CV Diego Hanssel Perez M2.pdf";
 
 export function Header() {
   return (
-    <div id={style.wrapper}>
+    <div className={style.wrapper} id="home_nav">
       <nav className={style.navbar}>
         <div className={style.brand}>
           <h2>
