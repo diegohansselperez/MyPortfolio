@@ -19,7 +19,7 @@ export function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink className={style.navbar_li} to="/aboutme" onClick>
+            <NavLink className={style.navbar_li} to="/#aboutme" onClick>
               About me
             </NavLink>
           </li>
@@ -48,19 +48,21 @@ export function Header() {
             <span>Diego</span> Hanssel Perez
           </h1>
           <p>
-            Bienvenido a mi Portfolio, aqui podras encontrar todo lo relacionado
-            a mi trayacto Profesional como <span>Desarrollador Web Full-Stack</span> y{" "}
-            <span>Frontend Developer</span>, diferentes proyectos en los que he
-            participado con otros desarrolladores ,adjunto otros proyectos
-            creados en base a mis conocimientos previos. Tambien tienes el
-            apartado para contactarme{" "}
+            ¡Bienvenido a mi portafolio! Aquí podrás explorar todo lo
+            relacionado con mi trayecto profesional como{" "}
+            <span>Desarrollador Web Full-Stack</span>. Encontrarás diversos
+            proyectos en los que he participado junto a otros desarrolladores.
+            Además, adjunto otros proyectos creados en base a mis conocimientos
+            previos. ¡No dudes en visitar la sección de contacto para ponerte en
+            contacto conmigo{" "}
             <Link
               to="/#contact_section"
               onClick
               className={style.apartado_contact}
             >
-              aqui.
+               aqui
             </Link>
+            !
           </p>
           {/* <Botton  download="Diego_Hanssel_Perez" to="../pdf/Curriculum Developer1-1.pdf" text="Descarga CV"/> */}
           <div className={style.divCv}>

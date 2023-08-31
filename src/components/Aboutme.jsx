@@ -4,16 +4,8 @@ import { Link } from "react-router-dom";
 export function AboutMe() {
   return (
     <>
-      <body>
-        <aside className={style.aside_contain}>
-          <ul className={style.menu}>
-            <Link className={style.link} to="/">
-              <li>
-                <i className="bx bx-left-arrow-alt bx-sm"></i>Home
-              </li>
-            </Link>
-          </ul>
-        </aside>
+      <div id="aboutme" className={style.containerClass}>
+        
         <main>
           <section className={style.container_section}>
             <div className={style.section_img}></div>
@@ -71,7 +63,7 @@ export function AboutMe() {
             </section>
           </section>
         </main>
-      </body>
+      </div>
     </>
   );
 }

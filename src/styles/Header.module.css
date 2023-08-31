@@ -1,140 +1,138 @@
 :root {
-    --azul-marino: #0827c9;
-    --azul-turquesa: #14cdb3;
-    --bottones: #c90888;
-  }
+  --azul-marino: #0827c9;
+  --azul-turquesa: #14cdb3;
+  --bottones: #c90888;
+}
 
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    background-color: #0827c9;
-    background-image: linear-gradient(160deg, #0827c9 0%, #80D0C7 100%);    
-    color: white;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  color: white;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
 }
 
 .brand {
-    margin-top: -6px;
+  margin-top: -6px;
 }
 
 .brand span {
-    color:#14cdb3;
+  color: #14cdb3;
 }
 
 .menu {
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
 }
 .menu li {
-    list-style: none;
+  list-style: none;
 }
 
 .menu .navbar_li {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
 }
 
 .menu .activo {
-    color: var(--azul-turquesa);
-    text-decoration: none;
-    padding: 10px 20px;
+  color: var(--azul-turquesa);
+  text-decoration: none;
+  padding: 10px 20px;
 }
 
 .menu .navbar_li:hover,
 .activo:hover {
-    background-color: azure;
-    color: var(--azul-marino);
-    transition: ease-in .3s;
+  background-color: azure;
+  color: var(--azul-marino);
+  transition: ease-in 0.3s;
 }
 
 /*seccion Navbar*/
 
 .main {
-    margin: 0 auto;
-    width: 85vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    place-items: center;
+  margin: 0 auto;
+  width: 85vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
 }
 
 main .fotoperfil {
-    border: 5px solid var(--azul-turquesa);
-    width: 80%;
-    height: 90%;
-    background-image: url('../assets/img/img_con_zoom.jpg');
-    background-size: cover;
-    background-position: center;
-    margin-left: 10px;
+  border: 5px solid var(--azul-turquesa);
+  width: 80%;
+  height: 90%;
+  background-image: url("../assets/img/img_con_zoom.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-left: 10px;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 .info_content p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .info_content span {
-    color: #14cdb3;
+  color: #14cdb3;
 }
 
 .apartado_contact {
-    color: var(--azul-turquesa);
+  color: var(--azul-turquesa);
 }
 
 .info_content .apartado_contact:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    color: var(--azul-turquesa);
-    opacity: .5;
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--azul-turquesa);
+  opacity: 0.5;
 }
 
 .social_network {
-    display: flex;
-    justify-content: space-evenly;
-    width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
 }
 
 .social_network a {
-    color: var(--azul-turquesa);
-    cursor: pointer;
+  color: var(--azul-turquesa);
+  cursor: pointer;
 }
 
 .social_network a:hover {
-    opacity: .5;
-    transition: ease-in .3s;
+  opacity: 0.5;
+  transition: ease-in 0.3s;
 }
 
 .boton_download {
-    padding: 10px 10px;
-    border-radius: 20px;
-    background-color: #c90888;
-    /* cursor: pointer; */
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  background-color: #c90888;
+  /* cursor: pointer; */
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 .boton_download:hover {
-    box-shadow: 0 0 7px #c90888;
-    background-color: #8a085f;
-    transition: ease-in-out 0.3s;
+  box-shadow: 0 0 7px #c90888;
+  background-color: #8a085f;
+  transition: ease-in-out 0.3s;
 }
 
 .divCv {
-    width: fit-content;
-    margin: 25px 0; 
+  width: fit-content;
+  margin: 25px 0;
 }
