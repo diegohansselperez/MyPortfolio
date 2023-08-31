@@ -104,7 +104,7 @@ li {
 }
 
 .section_text .title {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -123,6 +123,10 @@ li {
 }
 
 .section_text .text_container {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;

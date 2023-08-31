@@ -13,16 +13,16 @@
 
 .monster {
     width: 100%;
-    height: 90%;
+    height: fit-content;
     display: flex;
     align-self: center;
     margin-left: 30px;
 }
 
 .monster ul {
-    display: grid;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(auto-fill, 200px);
+    display: flex;
+   /*  grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(auto-fill, 200px); */
     row-gap: 4rem;
     align-content: center;
     background-color: #0827c9;

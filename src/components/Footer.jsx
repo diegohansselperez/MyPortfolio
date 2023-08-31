@@ -7,11 +7,11 @@ export function Footer() {
         <footer className={style.footer}>
         <div className={style.footer_content}>
             <h5>Diego Hanssel Cabrales Perez</h5>
-            <h5>Web Developer|Desarrollador Web</h5>
+            <h5>Desarrollador Web Full-Stack</h5>
         </div>
         <SocialItems />
         <div>
-            <Link className={style.hacia_arriba} to="#home_nav"
+            <Link className={style.hacia_arriba} to="/#home_nav"
             onClick >Ir al Comienzo</Link>  
         </div> 
     </footer>
