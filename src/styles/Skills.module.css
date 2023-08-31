@@ -25,8 +25,8 @@
     grid-template-rows: repeat(auto-fill, 200px); */
     row-gap: 4rem;
     align-content: center;
-    background-color: #0827c9;
-    background-image: linear-gradient(160deg, #0827c9 0%, #80D0C7 100%); 
+    background-color: #ffffff;
+   /*  background-image: linear-gradient(160deg, #0827c9 0%, #80D0C7 100%);  */
     border-radius: 30px;
 }
 

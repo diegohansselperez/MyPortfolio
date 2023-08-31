@@ -1,3 +1,4 @@
+import { AboutMe } from "./Aboutme";
 import { Contact } from "./Contact";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
@@ -8,6 +9,7 @@ export function Home() {
     return (
        <>   
             <Header />
+            <AboutMe />
             <Skills />
             <Proyectos />
             <Contact />
