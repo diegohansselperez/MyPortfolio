@@ -49,8 +49,8 @@ export function Header() {
           </h1>
           <p>
             Bienvenido a mi Portfolio, aqui podras encontrar todo lo relacionado
-            a mi trayacto Profesional como <span>Desarrollador Web</span> y{" "}
-            <span>Front-end Developer</span>, diferentes proyectos en los que he
+            a mi trayacto Profesional como <span>Desarrollador Web Full-Stack</span> y{" "}
+            <span>Frontend Developer</span>, diferentes proyectos en los que he
             participado con otros desarrolladores ,adjunto otros proyectos
             creados en base a mis conocimientos previos. Tambien tienes el
             apartado para contactarme{" "}
