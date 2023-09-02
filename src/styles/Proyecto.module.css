@@ -4,7 +4,7 @@
     --bottones: #c90888;
   }
 .portafolio {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background-color: #0827c9;
     background-image: linear-gradient(45deg, #0827c9 0%, #80D0C7 100%);

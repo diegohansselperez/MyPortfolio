@@ -1,12 +1,12 @@
 import style from "../styles/Aboutme.module.css";
-import { Link } from "react-router-dom";
+
 
 export function AboutMe() {
   return (
     <>
-      <div id="aboutme" className={style.containerClass}>
+      <div id="aboutme" className={style.containerAbout}>
         
-        <main>
+      
           <section className={style.container_section}>
             <div className={style.section_img}></div>
             <section className={style.section_text}>
@@ -15,7 +15,7 @@ export function AboutMe() {
                   <span>About Me</span>
                 </p>
               </div>
-              {/* <div className={style.divider}></div> */}
+              <div className={style.divider}></div>
               <div className={style.text_container}>
                 <p>
                   ¡Hola! Soy Diego, un Desarrollador Full-Stack apasionado por
@@ -62,7 +62,7 @@ export function AboutMe() {
               </article>
             </section>
           </section>
-        </main>
+        
       </div>
     </>
   );

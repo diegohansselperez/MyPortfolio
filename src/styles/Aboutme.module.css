@@ -7,7 +7,7 @@
     --bottom-text:'DM Sans', sans-serif;
 }
 
-div .containerClass {
+div .containerAbout {
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -15,77 +15,20 @@ div .containerClass {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    background-color: #0827c9;
+    background-image: linear-gradient(160deg, #0827c9 0%, #80D0C7 100%);   
 }
-
-.aside_contain {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    width: fit-content;
-    height: fit-content;
-    color: #fff;
-    z-index: 1; 
-}
-
-.menu {
-    display: flex;
-    flex-direction: row-reverse;
-    height: 100%;
-    align-content: center;
-    justify-self: flex-start;
-    list-style: none;
-    z-index: 1;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.menu .link,
-li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3px 5px;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.menu .link:hover{
-    background-color: rgb(0, 0, 0, .75);
-    color: #14cdb3;
-    transition: 0.3s cubic-bezier(.33,.47,.76,.26);
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-}
-
-.brand {
-    display: flex;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-}
-
-.brand span {
-    color:#14cdb3;
-}
-
-/*Section Main*/
 
 .container_section {
     position: relative;
     display: grid;
-    padding-left: 100px;
     grid-template-columns: 500px 600px;
     grid-template-rows: 100vh;
     gap: 10px;
     justify-content: center;
     align-items: center;
-    background-color: #0827c9;
-    background-image: linear-gradient(160deg, #0827c9 0%, #80D0C7 100%);   
+    /* background-color: #0827c9;
+    background-image: linear-gradient(160deg, #0827c9 0%, #80D0C7 100%);    */
 }
 
 .section_img {
@@ -103,7 +46,7 @@ li {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 700px;
+    height: 95%;
     background-color: rgb(53, 53, 53, .3);
     padding:0 15px;
 }
