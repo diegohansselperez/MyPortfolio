@@ -8,7 +8,7 @@ export function AboutMe() {
         
       
           <section className={style.container_section}>
-            <div className={style.section_img}></div>
+            {/* <div className={style.section_img}></div> */}
             <section className={style.section_text}>
               <div className={style.title_container}>
                 <p className={style.title}>
@@ -39,8 +39,7 @@ export function AboutMe() {
                   colaborar y compartir ideas con otros para un aprendizaje en
                   equipo exitoso. Además, tengo habilidades en comunicación
                   efectiva, liderazgo, trabajo en equipo y motivación.
-                </p>
-                <p>
+                
                   Soy perfeccionista por naturaleza, lo que me lleva a dedicar
                   tiempo a resolver errores y mejorar constantemente. Me
                   apasiona aprender nuevas tecnologías y formas de crear

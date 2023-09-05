@@ -86,6 +86,25 @@ export function Proyectos(){
                     <Botton text='proyect details' link='https://diegohansselperez.github.io/homework_list.github.io/' />
                 </div>    
             </div>
+            <div className={style.card}>
+                <div className={style.card_img}>
+                    <img className={style.original} src={imagen[5].img6} alt={imagen[5].alt} />
+                </div>
+                <div className={style.card_title}>
+                    <h2>Videogames Henry</h2>
+                </div>
+                <div className={style.card_projects_links}>
+                    <a href="https://github.com/diegohansselperez" target="_blank">
+                        <i className="fa-brands fa-github fa-lg"></i>
+                    </a>
+                    <a href="https://github.com/diegohansselperez/homework_list.github.io">
+                        <i className="fa-solid fa-code fa-lg"></i>
+                    </a>
+                </div>
+                <div className={style.project_details_content}>
+                    {/* <Botton text='proyect details' link='https://diegohansselperez.github.io/homework_list.github.io/' /> */}
+                </div>    
+            </div>
            
       
         </div>
