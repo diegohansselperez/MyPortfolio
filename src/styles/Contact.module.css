@@ -93,7 +93,7 @@ textarea::placeholder{
 }
 
 .btn_submit:hover {
-    background-color: var(--azul-marino);
+    background-color: var(--azul-turquesa);
     box-shadow: none;
     transition: ease-in .3s;
 }

@@ -21,7 +21,7 @@ export function Proyectos(){
                     <a href="https://github.com/diegohansselperez" target="_blank">
                         <i className="fa-brands fa-github fa-lg"></i>
                     </a>
-                    <a href="https://diegohansselperez.github.io/batatabit.mobile/">
+                    <a href="https://diegohansselperez.github.io/batatabit.mobile/" target="_blank">
                         <i className="fa-solid fa-code fa-lg"></i>
                     </a>
                 </div>
@@ -40,7 +40,7 @@ export function Proyectos(){
                     <a href="https://github.com/diegohansselperez" target="_blank">
                         <i className="fa-brands fa-github fa-lg"></i>
                     </a>
-                    <a href="https://github.com/diegohansselperez/yearsale.github.io">
+                    <a href="https://github.com/diegohansselperez/yearsale.github.io" target="_blank">
                         <i className="fa-solid fa-code fa-lg"></i>
                     </a>
                 </div>
@@ -59,7 +59,7 @@ export function Proyectos(){
                     <a href="https://github.com/diegohansselperez" target="_blank">
                         <i className="fa-brands fa-github fa-lg"></i>
                     </a>
-                    <a href="https://github.com/diegohansselperez/batatabit.mobile">
+                    <a href="https://github.com/diegohansselperez/batatabit.mobile" target="_blank">
                         <i className="fa-solid fa-code fa-lg"></i>
                     </a>    
                 </div>
@@ -78,7 +78,7 @@ export function Proyectos(){
                     <a href="https://github.com/diegohansselperez" target="_blank">
                         <i className="fa-brands fa-github fa-lg"></i>
                     </a>
-                    <a href="https://github.com/diegohansselperez/homework_list.github.io">
+                    <a href="https://github.com/diegohansselperez/homework_list.github.io" target="_blank">
                         <i className="fa-solid fa-code fa-lg"></i>
                     </a>
                 </div>
@@ -97,7 +97,7 @@ export function Proyectos(){
                     <a href="https://github.com/diegohansselperez" target="_blank">
                         <i className="fa-brands fa-github fa-lg"></i>
                     </a>
-                    <a href="https://github.com/diegohansselperez/homework_list.github.io">
+                    <a href="https://github.com/diegohansselperez/PI_Henry" target="_blank">
                         <i className="fa-solid fa-code fa-lg"></i>
                     </a>
                 </div>
