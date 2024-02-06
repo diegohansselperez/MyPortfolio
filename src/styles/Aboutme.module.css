@@ -1,112 +1,113 @@
 :root {
-    --azul-marino: #0827c9;
-    --azul-turquesa: #14cdb3;
-    --bottones: #c90888;
-    --text-general:'Roboto', sans-serif;
-    --title-text:'Lora', serif;
-    --bottom-text:'DM Sans', sans-serif;
+  --azul-marino: #0827c9;
+  --azul-turquesa: #14cdb3;
+  --bottones: #c90888;
+  --text-general: 'Roboto', sans-serif;
+  --title-text: 'Lora', serif;
+  --bottom-text: 'DM Sans', sans-serif;
 }
 
 div .containerAbout {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    background-color: #0827c9;
-    background-image: linear-gradient(160deg, #0827c9 0%, #80D0C7 100%);   
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #0827c9;
+  background-image: linear-gradient(160deg, #0827c9 0%, #80d0c7 100%);
 }
 
 .container_section {
-    position: relative;
-    display: grid;
-    grid-template-columns: 70%;
-    grid-template-rows: 100vh;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #0827c9;
+  position: relative;
+  display: grid;
+  grid-template-columns: 70%;
+  grid-template-rows: 100vh;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #0827c9;
     background-image: linear-gradient(160deg, #0827c9 0%, #80D0C7 100%);    */
 }
 
 .section_img {
-    border: 5px solid #14cdb3;
-    width: 100%;
-    height: 95%;
-    background-image: url("../assets/img/img_recortada_fondo.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  border: 5px solid #14cdb3;
+  width: 100%;
+  height: 95%;
+  background-image: url('../assets/img/img_recortada_fondo.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container_section .section_text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 95%;
-    background-color: rgb(53, 53, 53, .3);
-    padding:0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 95%;
+  background-color: rgb(53, 53, 53, 0.3);
+  padding: 0 15px;
 }
 
 .section_text .title span {
-    font-size: 1.5rem;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
 
 .divider {
-    height: 4px;
-    width: 60px;
-    background-color: #14cdb3;
-    margin-top: 3px;
-    margin-bottom: 1em;
+  height: 4px;
+  width: 60px;
+  background-color: #14cdb3;
+  margin-top: 3px;
+  margin-bottom: 1em;
 }
 
 .section_text .text_container {
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
 }
 
-
-
 .section_text article {
-    display: flex;
-    margin-top: 50px;
+  display: flex;
+  margin-top: 50px;
 }
 
 .barra {
-    position: relative;
-    width: 3px;
-    height: 31px;
-    background-color: #14cdb3;
-    margin-left: 10px;
+  position: relative;
+  width: 3px;
+  height: 31px;
+  background-color: #14cdb3;
+  margin-left: 10px;
 }
 
 .frase {
-    position: relative;
-    width: 80%; 
+  position: relative;
+  width: 80%;
 }
 
 .pStyle1 {
-    text-align: left;
-    color: #b4b2b2;
-    font-style: italic;
-    font-size: 14px;
-    margin: 0 0 0 10px;
+  text-align: left;
+  color: #b4b2b2;
+  font-style: italic;
+  font-size: 14px;
+  margin: 0 0 0 10px;
 }
 
 .pStyle2 {
-    text-align: center;
-    font-size: small;
-    color: #d8d6d6;
-    margin: 0;
+  text-align: center;
+  font-size: small;
+  color: #d8d6d6;
+  margin: 0;
+}
+
+@media screen and (max-width: 862px) {
 }

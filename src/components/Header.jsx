@@ -1,7 +1,7 @@
-import { Link, NavLink } from "react-router-dom";
-import { SocialItems } from "./Submodules";
-import style from "../styles/Header.module.css";
-import Curriculum from "../pdf/CV Diego Hanssel Perez M2.pdf";
+import { Link, NavLink } from 'react-router-dom';
+import { SocialItems } from './Submodules';
+import style from '../styles/Header.module.css';
+import Curriculum from '../pdf/CV Diego Hanssel Perez M2.pdf';
 
 export function Header() {
   return (
@@ -20,7 +20,7 @@ export function Header() {
           </li>
           <li>
             <NavLink className={style.navbar_li} to="/#aboutme" onClick>
-              About me
+              About
             </NavLink>
           </li>
           <li>
@@ -49,18 +49,18 @@ export function Header() {
           </h1>
           <p>
             ¡Bienvenido a mi portafolio! Aquí podrás explorar todo lo
-            relacionado con mi trayecto profesional como{" "}
+            relacionado con mi trayecto profesional como{' '}
             <span>Desarrollador Web Full-Stack</span>. Encontrarás diversos
             proyectos en los que he participado junto a otros desarrolladores.
             Además, adjunto otros proyectos creados en base a mis conocimientos
             previos. ¡No dudes en visitar la sección de contacto para ponerte en
-            contacto conmigo{" "}
+            contacto conmigo{' '}
             <Link
               to="/#contact_section"
               onClick
               className={style.apartado_contact}
             >
-               aqui
+              aqui
             </Link>
             !
           </p>
