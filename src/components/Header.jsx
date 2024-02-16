@@ -2,6 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { SocialItems } from './Submodules';
 import style from '../styles/Header.module.css';
 import Curriculum from '../pdf/CV Diego Hanssel Perez M2.pdf';
+import DroppToggle from '../hooks/DroppToggle';
 
 export function Header() {
   return (
@@ -12,7 +13,9 @@ export function Header() {
             D<span>HP</span>
           </h2>
         </div>
+        <DroppToggle />
         <ul className={style.menu}>
+          
           <li>
             <NavLink className={style.activo} to="/">
               Home
@@ -53,16 +56,15 @@ export function Header() {
             <span>Desarrollador Web Full-Stack</span>. Encontrarás diversos
             proyectos en los que he participado junto a otros desarrolladores.
             Además, adjunto otros proyectos creados en base a mis conocimientos
-            previos. ¡No dudes en visitar la sección de contacto para ponerte en
-            contacto conmigo{' '}
+            previos.
             <Link
               to="/#contact_section"
               onClick
               className={style.apartado_contact}
             >
-              aqui
+              Contacto
             </Link>
-            !
+            .
           </p>
           {/* <Botton  download="Diego_Hanssel_Perez" to="../pdf/Curriculum Developer1-1.pdf" text="Descarga CV"/> */}
           <div className={style.divCv}>

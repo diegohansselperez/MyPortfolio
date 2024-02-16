@@ -19,6 +19,11 @@
   padding: 1em 2em;
 }
 
+ .icon_dropp {
+  display: none;
+
+ }
+
 .brand {
   margin-top: -6px;
 }
@@ -70,7 +75,7 @@ main .fotoperfil {
   border: 5px solid var(--azul-turquesa);
   width: 80%;
   height: 90%;
-  background-image: url('../assets/img/img_con_zoom.jpg');
+  /* background-image: url('../assets/img/img_con_zoom.jpg'); */
   background-size: cover;
   background-position: center;
   margin-left: 10px;
