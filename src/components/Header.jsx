@@ -1,10 +1,25 @@
-import { Link, NavLink } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { SocialItems } from './Submodules';
 import style from '../styles/Header.module.css';
 import Curriculum from '../pdf/CV Diego Hanssel Perez M2.pdf';
 import DroppToggle from '../hooks/DroppToggle';
+import MenuBar from '../hooks/MenuBar';
 
 export function Header() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const updateIsMobile = () => {
+      const width = window.innerWidth;
+      setIsMobile(width < 769);
+    };
+
+    window.addEventListener('resize', updateIsMobile);
+
+    return () => window.removeEventListener('resize', updateIsMobile);
+  }, []);
+
   return (
     <div className={style.wrapper} id="home_nav">
       <nav className={style.navbar}>
@@ -13,35 +28,8 @@ export function Header() {
             D<span>HP</span>
           </h2>
         </div>
-        <DroppToggle />
-        <ul className={style.menu}>
-          
-          <li>
-            <NavLink className={style.activo} to="/">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className={style.navbar_li} to="/#aboutme" onClick>
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className={style.navbar_li} to="/#habilidades" onClick>
-              Habilidades
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className={style.navbar_li} to="/#portafolio" onClick>
-              Proyectos
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className={style.navbar_li} to="/#contact_section" onClick>
-              Contacto
-            </NavLink>
-          </li>
-        </ul>
+
+        {isMobile ? <DroppToggle /> : <MenuBar />}
       </nav>
 
       <main className={style.main}>
@@ -51,18 +39,15 @@ export function Header() {
             <span>Diego</span> Hanssel Perez
           </h1>
           <p>
-            ¡Bienvenido a mi portafolio! Aquí podrás explorar todo lo
-            relacionado con mi trayecto profesional como{' '}
-            <span>Desarrollador Web Full-Stack</span>. Encontrarás diversos
-            proyectos en los que he participado junto a otros desarrolladores.
-            Además, adjunto otros proyectos creados en base a mis conocimientos
-            previos.
+            ¡Bienvenido a mi portafolio! Explora mi trayecto como{' '}
+            <span>Desarrollador Web Full-Stack</span>. Descubre proyectos en los
+            que colaboré y otros basados en mis conocimientos previos.{' '}
             <Link
               to="/#contact_section"
               onClick
               className={style.apartado_contact}
             >
-              Contacto
+              Contactame
             </Link>
             .
           </p>

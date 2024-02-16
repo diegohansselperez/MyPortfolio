@@ -13,8 +13,6 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.15.10",
-    "boxicons": "^2.1.4",
-    "font-awesome": "^4.7.0",
     "react": "^18.2.0",
     "react-boxicons": "^0.0.28",
     "react-dom": "^18.2.0",

@@ -6,13 +6,11 @@ import Paper from '@mui/material/Paper';
 import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
+import style from '../styles/DroppTogle.module.css';
 
 // import Stack from '@mui/material/Stack';
 
-
-
 const DroppToggle = () => {
-
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
 
@@ -47,12 +45,10 @@ const DroppToggle = () => {
     prevOpen.current = open;
   }, [open]);
 
-    return (
-       
-          
-        <div>
-          <div className=''>
-          <Button
+  return (
+    <>
+      <div className={style.icon_dropp}>
+        <Button
           ref={anchorRef}
           id="composition-button"
           aria-controls={open ? 'composition-menu' : undefined}
@@ -60,10 +56,9 @@ const DroppToggle = () => {
           aria-haspopup="true"
           onClick={handleToggle}
         >
-          <i className='bx bx-menu'></i>
+          <i className="bx bx-menu"></i>
         </Button>
-          
-       
+
         <Popper
           open={open}
           anchorEl={anchorRef.current}
@@ -97,9 +92,9 @@ const DroppToggle = () => {
             </Grow>
           )}
         </Popper>
-      </div> </div>
-     
-    )
-}
+      </div>{' '}
+    </>
+  );
+};
 
-export default DroppToggle
+export default DroppToggle;

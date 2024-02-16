@@ -15,20 +15,10 @@ div .containerAbout {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  background-color: #0827c9;
-  background-image: linear-gradient(160deg, #0827c9 0%, #80d0c7 100%);
-}
-
-.container_section {
-  position: relative;
-  display: grid;
-  grid-template-columns: 70%;
-  grid-template-rows: 100vh;
-  gap: 10px;
   justify-content: center;
   align-items: center;
-  /* background-color: #0827c9;
-    background-image: linear-gradient(160deg, #0827c9 0%, #80D0C7 100%);    */
+  background-color: #0827c9;
+  background-image: linear-gradient(160deg, #0827c9 0%, #80d0c7 100%);
 }
 
 .section_img {
@@ -41,18 +31,18 @@ div .containerAbout {
   background-repeat: no-repeat;
 }
 
-.container_section .section_text {
+.section_text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 70%;
   height: 95%;
   background-color: rgb(53, 53, 53, 0.3);
   padding: 0 15px;
 }
 
 .section_text .title span {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -67,13 +57,14 @@ div .containerAbout {
 }
 
 .section_text .text_container {
+  width: auto;
   height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   color: #fff;
+  font-size: 85%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
 }
 
 .section_text article {
@@ -109,5 +100,30 @@ div .containerAbout {
   margin: 0;
 }
 
-@media screen and (max-width: 862px) {
+@media (max-width: 768px) {
+  .container_section {
+    flex-direction: column; /* Change from grid to column layout */
+  }
+
+  /* Additional changes for responsiveness (you can adjust as needed) */
+
+  .section_text {
+    padding: 20px; /* Increase padding for better readability */
+  }
+
+  .title span {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .divider {
+    width: 40px; /* Reduce divider width */
+  }
+
+  .text_container {
+    height: auto; /* Remove fixed height */
+  }
+
+  .frase {
+    width: 100%; /* Make quote span full width */
+  }
 }
