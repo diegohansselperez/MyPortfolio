@@ -1,7 +1,7 @@
 :root {
   --azul-marino: #0827c9;
   --azul-turquesa: #14cdb3;
-  --bottones: #c90888;
+  --bottones: #7611ed;
   --text-general: 'Roboto', sans-serif;
   --title-text: 'Lora', serif;
   --bottom-text: 'DM Sans', sans-serif;
@@ -62,8 +62,7 @@ div .containerAbout {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  color: #fff;
-  font-size: 85%;
+  font-size: rem;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -100,7 +99,32 @@ div .containerAbout {
   margin: 0;
 }
 
-@media (max-width: 768px) {
+/* Para pantallas de 0px a 375px */
+@media screen and (max-width: 375px) {
+  .text_container p {
+    color: #fff;
+    font-size: 55%;
+  }
+}
+
+/* Para pantallas de 376px a 438px (eliminando redundancia) */
+
+/* Para pantallas de 439px en adelante */
+@media screen and (min-width: 439px) {
+  .text_container p {
+    color: #fff;
+    font-size: 70%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .text_container p {
+    color: #fff;
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 768px) {
   .container_section {
     flex-direction: column; /* Change from grid to column layout */
   }
@@ -113,6 +137,11 @@ div .containerAbout {
 
   .title span {
     font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .text_container p {
+    color: #fff;
+    font-size: 1rem;
   }
 
   .divider {

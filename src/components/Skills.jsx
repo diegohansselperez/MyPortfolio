@@ -10,24 +10,6 @@ export function Skills() {
           Resumen de frameworks y lenguajes que he utilizado en proyectos
           reales.
         </p>
-
-        {/* <h2>Colocar imagenes de las tecnologias aprendidas</h2>
-        <ul className={style.list_programs}>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>TypeScript</li>
-          <li>JavaScript</li>
-          <li>React.js</li>
-          <li>Bootstrap</li>
-          <li>Git</li>
-          <li>Github</li>
-          <li>Node.js</li>
-          <li>Redux</li>
-          <li>MongoDB</li>
-          <li>PostgreSQL</li>
-          <li>Sequelize</li>
-          <li>Vite</li>
-        </ul> */}
       </div>
       <div className={style.contain_icons}>
         <ul>
@@ -69,17 +51,17 @@ export function Skills() {
               className="bx bxl-postgresql"
             ></i>
           </li>
-          <li>
-            <i
-              style={{ color: '#7611ed', fontSize: '9rem' }}
-              className="bx bxl-typescript"
-            ></i>
-          </li>
 
           <li>
             <i
               style={{ color: '#7611ed', fontSize: '9rem' }}
               className="bx bxl-redux"
+            ></i>
+          </li>
+          <li>
+            <i
+              style={{ color: '#7611ed', fontSize: '9rem' }}
+              className="bx bxl-typescript"
             ></i>
           </li>
         </ul>

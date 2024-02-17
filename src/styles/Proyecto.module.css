@@ -1,14 +1,14 @@
 :root {
   --azul-marino: #0827c9;
   --azul-turquesa: #14cdb3;
-  --bottones: #c90888;
+  --bottones: #7611ed;
 }
 
 .portafolio {
   width: 100vw;
   height: 100%;
   background-color: #0827c9;
-  background-image: linear-gradient(45deg, #0827c9 0%, #80d0c7 100%);
+
   color: white;
 }
 .portafolio_headings {
@@ -42,7 +42,7 @@
   color: white;
   width: 300px;
   height: 380px;
-  background-color: var(--azul-turquesa);
+  background-color: rgb(53, 53, 53, 0.3);
   border-radius: 15px;
 }
 
