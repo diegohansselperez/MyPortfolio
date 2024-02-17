@@ -58,42 +58,51 @@
   margin-bottom: 10px;
 }
 
-.list_programs {
-  display: grid;
-  font-family: 'Lato', sans-serif;
-  grid-template-columns: repeat(2, 130px);
-  list-style-position: inside;
-  margin-top: 3em;
-}
-
-.list_programs li {
-  list-style: none;
-  color: #ccd6f6;
-  font-size: 20px;
-}
-.list_programs li::before {
-  content: '</> ';
-  font-size: 13px;
-  color: #14cdb3;
-  text-align: center;
-}
-
-.download_rm {
-  color: white;
-  padding: 10px 20px;
-  background-color: var(--bottones);
-  border: none;
-  border-radius: 20px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-.download_rm:hover {
-  background-color: var(--azul-marino);
-  box-shadow: none;
-  transition: ease-in 0.2s;
-}
-
 .especialidades p {
   margin-bottom: 1em;
   line-height: 23px;
+}
+
+ul li i {
+  color: #7611ed;
+  font-size: 9rem;
+}
+
+.express {
+  font-size: 2.1rem;
+  color: #7611ed;
+}
+
+@media screen and (max-width: 600px) {
+  ul li i {
+    font-size: 8rem;
+  }
+  .contain_icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contain_icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Organizar elementos de forma vertical */
+  }
+}
+
+@media screen and (max-width: 940px) {
+  ul li i {
+    font-size: 6.5rem;
+  }
+}
+
+@media screen and (max-width: 976px) {
+  ul li i {
+    font-size: 5rem;
+  }
+
+  .express {
+    font-size: 1.4 rem;
+  }
 }

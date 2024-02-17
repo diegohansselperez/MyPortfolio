@@ -14,77 +14,44 @@ export function Skills() {
       <div className={style.contain_icons}>
         <ul>
           <li>
-            <i
-              style={{ color: '#7611ed', fontSize: '9rem' }}
-              className="bx bxl-html5"
-            ></i>
+            <i className="bx bxl-html5"></i>
           </li>
           <li>
-            <i
-              style={{ color: '#7611ed', fontSize: '9rem' }}
-              className="bx bxl-css3"
-            ></i>
+            <i className="bx bxl-css3"></i>
           </li>
           <li>
-            <i
-              style={{ color: '#7611ed', fontSize: '9rem' }}
-              className="bx bxl-javascript"
-            ></i>
+            <i className="bx bxl-javascript"></i>
           </li>
           <li>
-            <i
-              style={{ color: '#7611ed', fontSize: '9rem' }}
-              className="bx bxl-react"
-            ></i>
+            <i className="bx bxl-react"></i>
           </li>
         </ul>
         <ul>
           <li>
-            <i
-              style={{ color: '#7611ed', fontSize: '9rem' }}
-              className="bx bxl-nodejs"
-            ></i>
+            <i className="bx bxl-nodejs"></i>
           </li>
           <li>
-            <i
-              style={{ color: '#7611ed', fontSize: '9rem' }}
-              className="bx bxl-postgresql"
-            ></i>
+            <i className="bx bxl-postgresql"></i>
           </li>
 
           <li>
-            <i
-              style={{ color: '#7611ed', fontSize: '9rem' }}
-              className="bx bxl-redux"
-            ></i>
+            <i className="bx bxl-redux"></i>
           </li>
           <li>
-            <i
-              style={{ color: '#7611ed', fontSize: '9rem' }}
-              className="bx bxl-typescript"
-            ></i>
+            <i className="bx bxl-typescript"></i>
           </li>
         </ul>
         <ul>
           <li>
-            <i
-              style={{ color: '#7611ed', fontSize: '9rem' }}
-              className="bx bxl-tailwind-css"
-            ></i>
+            <i className="bx bxl-tailwind-css"></i>
           </li>
           <li>
-            <i
-              style={{ color: '#7611ed', fontSize: '9rem' }}
-              className="bx bxl-mongodb"
-            ></i>
+            <i className="bx bxl-mongodb"></i>
           </li>
           <li>
-            <i
-              style={{ color: '#7611ed', fontSize: '9rem' }}
-              className="bx bxl-git"
-            ></i>
+            <i className="bx bxl-git"></i>
           </li>
-          <li style={{ color: '#7611ed', fontSize: '2.1rem' }}>express</li>
+          <li className={style.express}>express</li>
         </ul>
       </div>
     </div>

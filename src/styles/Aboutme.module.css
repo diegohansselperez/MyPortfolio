@@ -17,8 +17,8 @@ div .containerAbout {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0827c9;
-  background-image: linear-gradient(160deg, #0827c9 0%, #80d0c7 100%);
+  background-color: #7611ed;
+  /* background-image: linear-gradient(160deg, #0827c9 0%, #80d0c7 100%); */
 }
 
 .section_img {
@@ -108,7 +108,12 @@ div .containerAbout {
 }
 
 /* Para pantallas de 376px a 438px (eliminando redundancia) */
-
+@media screen and (min-width: 375px) {
+  .text_container p {
+    color: #fff;
+    font-size: 65%;
+  }
+}
 /* Para pantallas de 439px en adelante */
 @media screen and (min-width: 439px) {
   .text_container p {

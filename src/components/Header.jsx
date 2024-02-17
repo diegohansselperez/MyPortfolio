@@ -12,7 +12,11 @@ export function Header() {
   useEffect(() => {
     const updateIsMobile = () => {
       const width = window.innerWidth;
-      setIsMobile(width < 769);
+      if (width < 769) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
     };
 
     window.addEventListener('resize', updateIsMobile);

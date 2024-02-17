@@ -7,6 +7,7 @@ import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import style from '../styles/DroppTogle.module.css';
+import { NavLink } from 'react-router-dom';
 
 // import Stack from '@mui/material/Stack';
 
@@ -56,7 +57,7 @@ const DroppToggle = () => {
           aria-haspopup="true"
           onClick={handleToggle}
         >
-          <i className="bx bx-menu"></i>
+          <i className="bx bx-menu bx-md" style={{ color: 'white' }}></i>
         </Button>
 
         <Popper
@@ -83,9 +84,61 @@ const DroppToggle = () => {
                     aria-labelledby="composition-button"
                     onKeyDown={handleListKeyDown}
                   >
-                    <MenuItem onClick={handleClose}>Profile</MenuItem>
+                    {/* <MenuItem onClick={handleClose}>Profile</MenuItem>
                     <MenuItem onClick={handleClose}>My account</MenuItem>
-                    <MenuItem onClick={handleClose}>Logout</MenuItem>
+                    <MenuItem onClick={handleClose}>Logout</MenuItem> */}
+                    <li>
+                      <MenuItem>
+                        {' '}
+                        <NavLink className={style.activo} to="/">
+                          Home
+                        </NavLink>
+                      </MenuItem>
+                    </li>
+                    <li>
+                      <MenuItem>
+                        <NavLink
+                          className={style.navbar_li}
+                          to="/#aboutme"
+                          onClick
+                        >
+                          About
+                        </NavLink>
+                      </MenuItem>
+                    </li>
+                    <li>
+                      <MenuItem>
+                        <NavLink
+                          className={style.navbar_li}
+                          to="/#habilidades"
+                          onClick
+                        >
+                          Habilidades
+                        </NavLink>
+                      </MenuItem>
+                    </li>
+                    <li>
+                      <MenuItem>
+                        <NavLink
+                          className={style.navbar_li}
+                          to="/#portafolio"
+                          onClick
+                        >
+                          Proyectos
+                        </NavLink>
+                      </MenuItem>
+                    </li>
+                    <li>
+                      <MenuItem>
+                        <NavLink
+                          className={style.navbar_li}
+                          to="/#contact_section"
+                          onClick
+                        >
+                          Contacto
+                        </NavLink>
+                      </MenuItem>
+                    </li>
                   </MenuList>
                 </ClickAwayListener>
               </Paper>

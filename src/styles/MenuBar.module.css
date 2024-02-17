@@ -32,13 +32,8 @@
   transition: ease-in 0.3s;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .menu {
-    width: 100%;
-    margin-top: 1em;
+    display: none;
   }
-
-  .menu li {
-    margin-bottom: 0.5em;
-  }
-}
+} */
