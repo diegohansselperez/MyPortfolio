@@ -1,5 +1,5 @@
 import style from '../styles/Proyecto.module.css'
-import imagen from '../Imegenes.js'
+import imagen from '../Imagenes.js'
 import { Botton } from './Submodules';
 
 export function Proyectos(){

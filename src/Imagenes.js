@@ -4,6 +4,7 @@ import Homework from '../src/assets/img/captura_homework-list.png'
 import BadBear from '../src/assets/img/captura_bear_bad_studio.png'
 import MiPortfolio from '../src/assets/img/captura_portfolio(1).png'
 import PI_Henry_Videogames from "../src/assets/img/PI_Henry.png"
+import linkedin from "../src/assets/icons/linkedin.png"
 
 export default [
     {
@@ -30,5 +31,8 @@ export default [
     {
         "img6":PI_Henry_Videogames,
         "alt":"PI_Henry_Videogames"
+    }, {
+        "icon_linkedin": linkedin
     }
+
 ]

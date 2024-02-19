@@ -20,8 +20,17 @@
 
 .social_network {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   width: 300px;
+}
+
+.social_network a img {
+  background-color: #14ccb4;
+  color: transparent;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .social_network a {

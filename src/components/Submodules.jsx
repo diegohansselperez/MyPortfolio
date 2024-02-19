@@ -1,4 +1,5 @@
 import style from '../styles/Submodule.module.css';
+import imagen from "../Imagenes"
 
 export function Botton(props) {
   return (
@@ -12,10 +13,11 @@ export function SocialItems() {
   return (
     <div className={style.social_network}>
       <a href="https://www.linkedin.com/in/hansselperez/" target="_blank">
-        <i
+        {/* <i
           className="fa-brands fa-linkedin 
             fa-2x"
-        ></i>
+        ></i> */}
+       <img style={{width:"1.8em"}} src={imagen[6].icon_linkedin} alt="" />
       </a>
       <a href="https://www.instagram.com/diegohanssel_perez/" target="_blank">
         <i className="fa-brands fa-instagram-square fa-2x"></i>
