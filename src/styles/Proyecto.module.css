@@ -64,7 +64,6 @@
   max-height: 200px; */
   width: 100%;
   height: auto;
-  border-radius: 15px 15px 0 0;
 }
 
 .card_title {
@@ -88,7 +87,7 @@
 
 .card .project_details {
   padding: 10px 20px;
-  background-color: var(--bottones);
+  background-color: var(--azul-marino);
   border: none;
   border-radius: 20px;
   margin-top: 10px;
@@ -98,7 +97,6 @@
 }
 
 .card .project_details:hover {
-  background-color: var(--azul-marino);
   color: white;
   box-shadow: none;
   transition: ease-in 0.3s;

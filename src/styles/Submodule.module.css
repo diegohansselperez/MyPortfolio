@@ -1,9 +1,15 @@
+:root {
+  --azul-marino: #0827c9;
+  --azul-turquesa: #14cdb3;
+  --bottones: #c90888;
+}
+
 .btn {
   font-size: small;
   padding: 10px 20px;
-  background-color: #7611ed;
+  background-color: var(--bottones);
   color: #fff;
-  border-radius: 30px;
+  border-radius: 6px;
   text-transform: uppercase;
   /* border: none; */
   text-decoration: none;
@@ -13,9 +19,9 @@
 }
 
 .btn:hover {
-  box-shadow: 0 0 7px #c90888;
-  background-color: #8a085f;
-  transition: ease-in-out 0.5s;
+  background-color: #14cdb3;
+  box-shadow: none;
+  transition: ease-in 0.5s;
 }
 
 .social_network {
@@ -39,6 +45,6 @@
 
 .social_network a:hover {
   transform: translateY(-4px);
-  transition: transform 0.3s cubic-bezier(0.12, 0, 0.39, 0);
+  transition: ease-in 0.3s;
   opacity: 0.7;
 }
