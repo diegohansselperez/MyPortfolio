@@ -146,7 +146,7 @@ export function Proyectos() {
             </a>
           </div>
           <div className={style.project_details_content}>
-            {/* <Botton text='proyect details' link='https://diegohansselperez.github.io/homework_list.github.io/' /> */}
+            {<Botton text="proyect details" link="https://google.com" />}
           </div>
         </div>
       </div>

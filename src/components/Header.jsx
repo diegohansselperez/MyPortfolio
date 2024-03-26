@@ -55,7 +55,7 @@ export function Header() {
             </Link>
             .
           </p>
-          {/* <Botton  download="Diego_Hanssel_Perez" to="../pdf/Curriculum Developer1-1.pdf" text="Descarga CV"/> */}
+
           <div className={style.divCv}>
             <a className={style.boton_download} href={Curriculum} download>
               Descargar CV
