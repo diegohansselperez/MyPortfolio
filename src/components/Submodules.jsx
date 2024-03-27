@@ -1,5 +1,5 @@
 import style from '../styles/Submodule.module.css';
-import imagen from "../Imagenes"
+import styleP from '../styles/Proyecto.module.css';
 
 export function Botton(props) {
   return (
@@ -13,11 +13,10 @@ export function SocialItems() {
   return (
     <div className={style.social_network}>
       <a href="https://www.linkedin.com/in/hansselperez/" target="_blank">
-        {/* <i
+        <i
           className="fa-brands fa-linkedin 
             fa-2x"
-        ></i> */}
-       <img style={{width:"1.8em"}} src={imagen[6].icon_linkedin} alt="" />
+        ></i>
       </a>
       <a href="https://www.instagram.com/diegohanssel_perez/" target="_blank">
         <i className="fa-brands fa-instagram-square fa-2x"></i>
@@ -28,3 +27,27 @@ export function SocialItems() {
     </div>
   );
 }
+
+export function CardProyectsLinks({ github, project }) {
+  return (
+    <>
+      <div className={styleP.card_projects_links}>
+        <a href="https://github.com/diegohansselperez" target="_blank">
+          <i className="fa-brands fa-github fa-lg"></i>
+        </a>
+        <a href={github} target="_blank">
+          <i className="fa-solid fa-code fa-lg"></i>
+        </a>
+      </div>
+      <div className={styleP.project_details_content}>
+        <Botton text="proyect details" link={project} />
+      </div>{' '}
+    </>
+  );
+}
+
+// exports = {
+//   CardProyectsLinks,
+//   SocialItems,
+//   Botton,
+// };
