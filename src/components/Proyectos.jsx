@@ -1,6 +1,6 @@
 import style from '../styles/Proyecto.module.css';
 import imagen from '../Imagenes.js';
-import { Botton, CardProyectsLinks } from './Submodules';
+import { CardProyectsLinks } from './Submodules';
 
 export function Proyectos() {
   return (
@@ -41,20 +41,6 @@ export function Proyectos() {
             github={'https://github.com/diegohansselperez/yearsale.github.io'}
             project={'https://diegohansselperez.github.io/yearsale.github.io/'}
           />
-          {/* <div className={style.card_projects_links}>
-            <a href="https://github.com/diegohansselperez" target="_blank">
-              <i className="fa-brands fa-github fa-lg"></i>
-            </a>
-            <a
-              href="https://github.com/diegohansselperez/yearsale.github.io"
-              target="_blank"
-            >
-              <i className="fa-solid fa-code fa-lg"></i>
-            </a>
-          </div>
-          <div className={style.project_details_content}>
-            <Botton text="proyect details" />
-          </div> */}
         </div>
         <div className={style.card}>
           <div className={style.card_img}>
@@ -75,23 +61,6 @@ export function Proyectos() {
               'https://diegohansselperez.github.io/bearbadstudio.github.io/'
             }
           />
-          {/* <div className={style.card_projects_links}>
-            <a href="https://github.com/diegohansselperez" target="_blank">
-              <i className="fa-brands fa-github fa-lg"></i>
-            </a>
-            <a
-              href="https://github.com/diegohansselperez/batatabit.mobile"
-              target="_blank"
-            >
-              <i className="fa-solid fa-code fa-lg"></i>
-            </a>
-          </div>
-          <div className={style.project_details_content}>
-            <Botton
-              text="proyect details"
-              link="https://diegohansselperez.github.io/bearbadstudio.github.io/"
-            />
-          </div> */}
         </div>
         <div className={style.card}>
           <div className={style.card_img}>
@@ -112,23 +81,6 @@ export function Proyectos() {
               'https://diegohansselperez.github.io/homework_list.github.io/'
             }
           />
-          {/* <div className={style.card_projects_links}>
-            <a href="https://github.com/diegohansselperez" target="_blank">
-              <i className="fa-brands fa-github fa-lg"></i>
-            </a>
-            <a
-              href="https://github.com/diegohansselperez/homework_list.github.io"
-              target="_blank"
-            >
-              <i className="fa-solid fa-code fa-lg"></i>
-            </a>
-          </div>
-          <div className={style.project_details_content}>
-            <Botton
-              text="proyect details"
-              link="https://diegohansselperez.github.io/homework_list.github.io/"
-            />
-          </div> */}
         </div>
         <div className={style.card}>
           <div className={style.card_img}>
@@ -145,20 +97,6 @@ export function Proyectos() {
             github={'https://github.com/diegohansselperez/PI_Henry'}
             project={''}
           />
-          {/* <div className={style.card_projects_links}>
-            <a href="https://github.com/diegohansselperez" target="_blank">
-              <i className="fa-brands fa-github fa-lg"></i>
-            </a>
-            <a
-              href="https://github.com/diegohansselperez/PI_Henry"
-              target="_blank"
-            >
-              <i className="fa-solid fa-code fa-lg"></i>
-            </a>
-          </div>
-          <div className={style.project_details_content}>
-            <Botton text='proyect details' link='https://diegohansselperez.github.io/homework_list.github.io/' />
-          </div> */}
         </div>
       </div>
     </div>
