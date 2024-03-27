@@ -101,4 +101,6 @@ export function Proyectos() {
       </div>
     </div>
   );
+  );
 }
+

@@ -1,4 +1,4 @@
-import style from "../styles/Contact.module.css";
+import style from '../styles/Contact.module.css';
 
 export function Contact() {
   return (
@@ -8,7 +8,7 @@ export function Contact() {
         <div className={style.divider}></div>
       </div>
       <div className={style.contact_form}>
-        <h4>Enviame un mensage...</h4>
+        <h4>ESCRIBEME AL CORREO</h4>
         <form
           action="https://formsubmit.co/diegohansselp24@gmail.com"
           method="POST"
@@ -22,21 +22,20 @@ export function Contact() {
           </label>
           <label htmlFor="comment">
             <textarea
-                name="comment"
-                required
-                placeholder="Escribe un mensaje..."
-                rows="10"
-                style={{resize:"none", height: "150px"}}
-                
+              name="comment"
+              required
+              placeholder="Escribe un mensaje..."
+              rows="10"
+              style={{
+                resize: 'none',
+                height: '150px',
+                fontFamily: 'Helvetica',
+              }}
             ></textarea>
           </label>
-          <div >
+          <div>
             <input className={style.btn_submit} type="submit" />
-            <input
-              type="hidden"
-              name="_subject"
-              value="Mi Portfolio"
-            />
+            <input type="hidden" name="_subject" value="Mi Portfolio" />
           </div>
         </form>
       </div>
