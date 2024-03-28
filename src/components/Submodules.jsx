@@ -45,9 +45,3 @@ export function CardProyectsLinks({ github, project }) {
     </>
   );
 }
-
-// exports = {
-//   CardProyectsLinks,
-//   SocialItems,
-//   Botton,
-// };
