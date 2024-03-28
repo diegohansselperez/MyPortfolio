@@ -4,7 +4,7 @@
   --bottones: #c90888;
 }
 
-Footer {
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,7 @@ Footer {
   background-color: #7611ed;
 }
 
-footer > small {
+.footer > small {
   text-align: end;
 }
 
