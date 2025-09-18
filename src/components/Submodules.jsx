@@ -1,9 +1,6 @@
-import style from '../styles/Submodule.module.css';
-import styleP from '../styles/Proyecto.module.css';
-
 export function Botton(props) {
   return (
-    <a onClick target="_blank" href={props.link} className={style.btn}>
+    <a onClick target="_blank" href={props.link}>
       {props.text}
     </a>
   );
@@ -11,7 +8,7 @@ export function Botton(props) {
 
 export function SocialItems() {
   return (
-    <div className={style.social_network}>
+    <div className="">
       <a href="https://www.linkedin.com/in/hansselperez/" target="_blank">
         <i
           className="fa-brands fa-linkedin 
@@ -31,7 +28,7 @@ export function SocialItems() {
 export function CardProyectsLinks({ github, project }) {
   return (
     <>
-      <div className={styleP.card_projects_links}>
+      <div className="">
         <a href="https://github.com/diegohansselperez" target="_blank">
           <i className="fa-brands fa-github fa-lg"></i>
         </a>
@@ -39,7 +36,7 @@ export function CardProyectsLinks({ github, project }) {
           <i className="fa-solid fa-code fa-lg"></i>
         </a>
       </div>
-      <div className={styleP.project_details_content}>
+      <div className="">
         <Botton text="proyect details" link={project} />
       </div>{' '}
     </>

@@ -1,17 +1,15 @@
-import style from '../styles/Skills.module.css';
-
 export function Skills() {
   return (
-    <div id="habilidades" className={style.especialidades}>
-      <div className={style.about_info}>
+    <div id="habilidades" className="">
+      <div className="">
         <h2>Tech-Skills</h2>
-        <div className={style.divider}></div>
+        <div className=""></div>
         <p>
           Resumen de frameworks y lenguajes que he utilizado en proyectos
           reales.
         </p>
       </div>
-      <div className={style.contain_icons}>
+      {/*  <div className="">
         <ul>
           <li>
             <i className="bx bxl-html5"></i>
@@ -51,9 +49,9 @@ export function Skills() {
           <li>
             <i className="bx bxl-git"></i>
           </li>
-          <li className={style.express}>express</li>
+          <li className="">express</li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }

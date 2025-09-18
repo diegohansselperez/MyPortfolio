@@ -9,8 +9,6 @@ Este es el repositorio para mi portafolio personal. Aquí comparto información 
 - **CSS**: Lenguaje de estilos utilizado para dar estilo y diseño a las páginas web.
 - **JavaScript (JS)**: Lenguaje de programación utilizado para agregar interactividad y dinamismo a las páginas web.
 - **Hooks de React**: Utilizados para manejar el estado y el ciclo de vida de los componentes en React.
-- **Material-UI**: Biblioteca de componentes de interfaz de usuario para React basada en Material Design.
-- **React Router Dom**: Utilizado para el enrutamiento y la navegación dentro de la aplicación React.
 - **Font Awesome**: Utilizado para incorporar iconos vectoriales y gráficos personalizables en la aplicación web.
 
 ## Descripción

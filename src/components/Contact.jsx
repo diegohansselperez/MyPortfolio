@@ -1,13 +1,11 @@
-import style from '../styles/Contact.module.css';
-
 export function Contact() {
   return (
-    <div id="contact_section" className={style.contact_section}>
-      <div className={style.contact_headings}>
+    <div id="contact_section" className="">
+      <div className="">
         <h2>Contacto</h2>
-        <div className={style.divider}></div>
+        <div className=""></div>
       </div>
-      <div className={style.contact_form}>
+      {/*  <div className={style.contact_form}>
         <h4>ESCRIBEME AL CORREO</h4>
         <form
           action="https://formsubmit.co/diegohansselp24@gmail.com"
@@ -37,8 +35,8 @@ export function Contact() {
             <input className={style.btn_submit} type="submit" />
             <input type="hidden" name="_subject" value="Mi Portfolio" />
           </div>
-        </form>
-      </div>
+        </form> 
+      </div>*/}
     </div>
   );
 }
