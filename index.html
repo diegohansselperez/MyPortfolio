@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--GoogleFonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@500&display=swap"
-    rel="stylesheet">
-  <!--FontAwesome & BOXICONS-->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Enlaza el archivo CSS compilado de Tailwind -->
+  <link rel="stylesheet" href="./src/index.css" />
+
   <title>Diego Cabrales Perez</title>
 </head>
 
 <body>
+  <!-- 
+    Este es el contenedor principal de la aplicación.
+    React inyectará todos los componentes aquí.
+  -->
   <div id="root"></div>
 
-
+  <!-- Script para los iconos de Font Awesome -->
+  <script src="https://kit.fontawesome.com/363f3fc718.js" crossorigin="anonymous"></script>
+  <!-- 
+    Importa el archivo de entrada de la aplicación React.
+    'type="module"' es crucial para usar la sintaxis ES6 de import/export.
+  -->
+  <script type="module" src="/src/index.jsx"></script>
 
 </body>
-<script src="https://kit.fontawesome.com/363f3fc718.js" crossorigin="anonymous"></script>
-<script type="module" src="/src/index.jsx"></script>
 
 </html>

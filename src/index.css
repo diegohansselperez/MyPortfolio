@@ -1,8 +1,140 @@
 @import 'tailwindcss';
-:root {
-  background-color: oklch(0.13 0.03 261.7);
-  color: antiquewhite;
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --primary: 250 47% 60%;
+    --primary-foreground: 210 40% 98%;
+    --border: 214 32% 91%;
+  }
+
+  /* Variables de CSS para el tema oscuro */
+  .dark {
+    --background: 222 47% 4%;
+    --foreground: 213 31% 91%;
+    --card: 222 47% 8%;
+    --primary: 250 65% 65%;
+    --primary-foreground: 213 31% 91%;
+    --border: 217 33% 20%;
+  }
+
+  /* Aplica clases de Tailwind a elementos nativos */
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    transition-property: background-color, color;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+    overflow-x: hidden;
+  }
 }
-html {
-  scroll-behavior: smooth;
+
+/* Clases de utilidad personalizadas */
+@layer utilities {
+  .container-app {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media (min-width: 640px) {
+    .container-app {
+      max-width: 640px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container-app {
+      max-width: 768px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container-app {
+      max-width: 1024px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .container-app {
+      max-width: 1280px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .container-app {
+      max-width: 1400px;
+    }
+  }
+
+  .text-glow {
+    position: relative;
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+  }
+
+  .card-hover {
+    transition-property: transform, box-shadow;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card-hover:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .gradient-border {
+    position: relative;
+    border-radius: 0.375rem;
+    background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
+    background-clip: padding-box;
+    border: 1px solid transparent;
+  }
+
+  .cosmic-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    font-weight: 500;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .cosmic-button:hover {
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+    transform: scale(1.05);
+  }
+  .cosmic-button:active {
+    transform: scale(0.95);
+  }
+
+  .star {
+    position: absolute;
+    border-radius: 9999px;
+    background-color: white;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+  }
+
+  /* Animación de flotar personalizada */
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
 }
