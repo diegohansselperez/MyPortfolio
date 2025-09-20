@@ -124,7 +124,7 @@
   }
 
   /* Animación de flotar personalizada */
-  @keyframes float {
+  /*  @keyframes float {
     0%,
     100% {
       transform: translateY(0);
@@ -136,5 +136,21 @@
 
   .animate-float {
     animation: float 6s ease-in-out infinite;
+  } */
+  /* Animación de pulso personalizado (parpadeo) */
+  @keyframes subtle-pulse {
+    0%,
+    100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  .animate-pulse-subtle {
+    animation-name: subtle-pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
   }
 }
