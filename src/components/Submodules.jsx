@@ -1,3 +1,5 @@
+import { Github, InboxIcon, Linkedin, Mail } from 'lucide-react';
+
 export function Botton(props) {
   return (
     <a onClick target="_blank" href={props.link}>
@@ -8,18 +10,31 @@ export function Botton(props) {
 
 export function SocialItems() {
   return (
-    <div className="">
-      <a href="https://www.linkedin.com/in/hansselperez/" target="_blank">
-        <i
-          className="fa-brands fa-linkedin 
-            fa-2x"
-        ></i>
+    <div className=" flex flex-wrap justify-between gap-3 items-center">
+      <a
+        className="flex justify-between items-center px-2 py-1 gradient-border-social"
+        href="https://www.linkedin.com/in/hansselperez/"
+        target="_blank"
+      >
+        <Linkedin size={24} />
+        <span className="ml-2 font-bold">Linkedin</span>
       </a>
-      <a href="https://www.instagram.com/diegohanssel_perez/" target="_blank">
-        <i className="fa-brands fa-instagram-square fa-2x"></i>
+
+      <a
+        className="flex justify-between items-center px-2 py-1 gradient-border-social"
+        href="#contact"
+        target="_blank"
+      >
+        <Mail size={24} />
+        <span className="ml-2 font-bold">Email</span>
       </a>
-      <a href="https://github.com/diegohansselperez" target="_blank">
-        <i className="fa-brands fa-github-square fa-2x"></i>
+      <a
+        className="flex justify-between items-center px-2 py-1 gradient-border-social dark:text-glow"
+        href="https://github.com/diegohansselperez"
+        target="_blank"
+      >
+        <Github size={24} />
+        <span className="ml-2 font-bold ">GitHub</span>
       </a>
     </div>
   );

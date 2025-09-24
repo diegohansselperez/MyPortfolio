@@ -7,6 +7,8 @@ import { Proyectos } from './Proyectos';
 import { Skills } from './Skills';
 import StarBackground from './StarBackground';
 import ThemeToggle from './ThemeToggle';
+import Navbar from './Navbar';
+import HeroSection from './HeroSection';
 
 export function Home() {
   useEffect(() => {
@@ -28,6 +30,13 @@ export function Home() {
       <ThemeToggle />
       {/* Fondo Estrellado */}
       <StarBackground />
+      {/* Navbar Desktop and Mobilke*/}
+      <Navbar />
+      {/* Main Content*/}
+      <main>
+        <HeroSection />
+        <AboutMe />
+      </main>
     </div>
   );
 }
@@ -35,7 +44,7 @@ export function Home() {
 export default Home;
 {
   /*  <Header />
-            <AboutMe />
+            
             <Skills />
             <Proyectos />
             <Contact />

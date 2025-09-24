@@ -7,6 +7,13 @@
     --primary: 250 47% 60%;
     --primary-foreground: 210 40% 98%;
     --border: 214 32% 91%;
+    --social-foreground: 213 31% 25%; /* Gris oscuro para el tema claro */
+    --social-background: rgba(
+      255,
+      255,
+      255,
+      0.3
+    ); /* Fondo semi-transparente para el tema claro */
   }
 
   /* Variables de CSS para el tema oscuro */
@@ -17,6 +24,13 @@
     --primary: 250 65% 65%;
     --primary-foreground: 213 31% 91%;
     --border: 217 33% 20%;
+    --social-foreground: 213 31% 75%; /* Blanco/Gris claro para el tema oscuro */
+    --social-background: rgba(
+      0,
+      0,
+      0,
+      0.4
+    ); /* Fondo semi-transparente para el tema oscuro */
   }
 
   /* Aplica clases de Tailwind a elementos nativos */
@@ -74,10 +88,12 @@
     }
   }
 
-  .text-glow {
+  /* .text-glow:hover {
     position: relative;
-    text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
-  }
+    transition-duration: 300ms;
+    color: white;
+    text-shadow: 0 0 10px #f8f8f8b9;
+  } */
 
   .card-hover {
     transition-property: transform, box-shadow;
@@ -96,6 +112,14 @@
     background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
     background-clip: padding-box;
     border: 1px solid transparent;
+  }
+  .gradient-border-social {
+    position: relative;
+    color: rgba(255, 255, 255, 0.534);
+    border-radius: 0.375rem;
+    background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
+    background-clip: padding-box;
+    border: 1px solid white;
   }
 
   .cosmic-button {
@@ -124,19 +148,18 @@
   }
 
   /* Animación de flotar personalizada */
-  /*  @keyframes float {
+  @keyframes float {
     0%,
     100% {
-      transform: translateY(0);
+      transform: translateY(10px);
     }
     50% {
-      transform: translateY(-10px);
+      transform: translateY(0px);
     }
   }
-
   .animate-float {
-    animation: float 6s ease-in-out infinite;
-  } */
+    animation: float 1s ease-in-out infinite;
+  }
   /* Animación de pulso personalizado (parpadeo) */
   @keyframes subtle-pulse {
     0%,
@@ -152,5 +175,27 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+  }
+  .social-button {
+    color: hsl(var(--social-foreground));
+    background-color: hsl(var(--social-background));
+    border: 2px solid hsl(var(--social-foreground));
+    transition: all 0.3s ease;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+  }
+  .social-button:hover {
+    background: linear-gradient(
+      to right,
+      hsl(var(--social-background)),
+      hsl(var(--social-background))
+    );
+    background-clip: padding-box;
+    color: hsl(var(--social-background));
+    position: relative;
+    transition-duration: 300ms;
+
+    border-radius: 10px;
   }
 }
