@@ -4,7 +4,7 @@
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
     --card: 0 0% 100%;
-    --primary: 250 47% 60%;
+    --primary: 275, 96%, 52%;
     --primary-foreground: 210 40% 98%;
     --border: 214 32% 91%;
     --social-foreground: 213 31% 25%; /* Gris oscuro para el tema claro */
@@ -21,7 +21,7 @@
     --background: 222 47% 4%;
     --foreground: 213 31% 91%;
     --card: 222 47% 8%;
-    --primary: 250 65% 65%;
+    --primary: 275, 96%, 52%;
     --primary-foreground: 213 31% 91%;
     --border: 217 33% 20%;
     --social-foreground: 213 31% 75%; /* Blanco/Gris claro para el tema oscuro */
@@ -101,7 +101,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .card-hover:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
       0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
@@ -123,18 +123,19 @@
   }
 
   .cosmic-button {
-    padding: 0.5rem 1.5rem;
-    border-radius: 9999px;
+    padding: 8px 24px;
+    border-radius: 10px;
     background-color: hsl(var(--primary));
     color: hsl(var(--primary-foreground));
-    font-weight: 500;
+    font-weight: 600;
+    text-align: center;
     transition-property: all;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .cosmic-button:hover {
-    box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
     transform: scale(1.05);
+    opacity: 95%;
   }
   .cosmic-button:active {
     transform: scale(0.95);

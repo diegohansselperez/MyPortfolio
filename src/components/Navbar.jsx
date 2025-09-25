@@ -34,7 +34,7 @@ const Navbar = () => {
           <img
             className="w-25 transition-all duration-500 hover:scale-115 h-auto md:w-50 relative z-10"
             /*  src="/src/assets/img/dhperez_logo.png" */
-            src="/src/assets/DHPEREZ (1)-cropped.svg"
+            src="/src/assets/dhperez_cropped.svg"
             alt="dhperez_logo"
           />
         </a>
