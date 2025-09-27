@@ -52,11 +52,11 @@ export function Skills() {
             </button>
           ))}
         </div>
-        <div className="grid grid-cols-3 text-center sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-3 sm:gap-6">
+        <div className="grid grid-cols-2 text-center  lg:grid-cols-3 gap-x-2 gap-y-3 sm:gap-6">
           {filterCategories.map((skill, key) => (
             <article
               key={key}
-              className="bg-[hsl(var(--card))] p-2 sm:p-6 rounded-lg shadow-xs card-hover"
+              className="bg-[hsl(var(--card))]  p-2 sm:p-6 rounded-lg shadow-xs card-hover"
             >
               <div className="text-left mb-4">
                 <h3 className="font-semibold text-lg">{skill.name}</h3>

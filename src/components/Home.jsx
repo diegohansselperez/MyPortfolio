@@ -37,6 +37,7 @@ export function Home() {
         <HeroSection />
         <AboutMe />
         <Skills />
+        <Proyectos />
       </main>
     </div>
   );
