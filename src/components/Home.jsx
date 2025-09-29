@@ -3,7 +3,7 @@ import { AboutMe } from './Aboutme';
 import { Contact } from './Contact';
 import { Footer } from './Footer';
 import { Header } from './Header';
-import { Proyectos } from './Proyectos';
+import Proyects from './Proyects';
 import { Skills } from './Skills';
 import StarBackground from './StarBackground';
 import ThemeToggle from './ThemeToggle';
@@ -37,7 +37,7 @@ export function Home() {
         <HeroSection />
         <AboutMe />
         <Skills />
-        <Proyectos />
+        <Proyects />
       </main>
     </div>
   );

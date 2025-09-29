@@ -10,9 +10,9 @@ export function AboutMe() {
           </h2>{' '}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-center">
-              <div className=" w-1/2 h-auto flex justify-center items-center border-2 border-[hsl(var(--primary))] mx-auto rounded-full">
+              <div className=" w-1/2 h-auto flex justify-center items-center  mx-auto rounded-full">
                 <img
-                  className="w-full h-auto rounded-full"
+                  className="w-full h-auto rounded-full transition-transform border-2 border-[hsl(var(--primary))] duration-500 hover:scale-105"
                   src="/src/assets/picture_me_profolio.jpg"
                   alt="photograpy_me"
                 />
