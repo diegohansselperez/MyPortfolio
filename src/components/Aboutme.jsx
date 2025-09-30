@@ -1,4 +1,5 @@
 import { Briefcase, Code, FileUser, User } from 'lucide-react';
+import imageMe from '../images/picture_me_profolio.jpg';
 
 export function AboutMe() {
   return (
@@ -13,7 +14,7 @@ export function AboutMe() {
               <div className=" w-1/2 h-auto flex justify-center items-center  mx-auto rounded-full">
                 <img
                   className="w-full h-auto rounded-full transition-transform border-2 border-[hsl(var(--primary))] duration-500 hover:scale-105"
-                  src="/src/assets/picture_me_profolio.jpg"
+                  src={imageMe}
                   alt="photograpy_me"
                 />
               </div>

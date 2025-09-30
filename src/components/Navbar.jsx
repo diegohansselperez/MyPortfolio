@@ -1,12 +1,13 @@
 import { MenuIcon, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import principalLogo from '../images/dhperez_cropped.svg';
 
 const navItems = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Contact', href: '#contact_section' },
 ];
 
 const Navbar = () => {
@@ -33,8 +34,7 @@ const Navbar = () => {
           {/* vamos a crear un svg para la parte blanca */}
           <img
             className="w-25 transition-all duration-500 hover:scale-115 h-auto md:w-50 relative z-10"
-            /*  src="/src/assets/img/dhperez_logo.png" */
-            src="/src/assets/dhperez_cropped.svg"
+            src={principalLogo}
             alt="dhperez_logo"
           />
         </a>

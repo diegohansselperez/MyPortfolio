@@ -8,12 +8,8 @@
     --primary-foreground: 210 40% 98%;
     --border: 214 32% 91%;
     --social-foreground: 213 31% 25%; /* Gris oscuro para el tema claro */
-    --social-background: rgba(
-      255,
-      255,
-      255,
-      0.3
-    ); /* Fondo semi-transparente para el tema claro */
+    --social-background: 0, 0%, 88%; /* Fondo semi-transparente para el tema claro */
+    --text-gray: 0, 0%, 50%;
   }
 
   /* Variables de CSS para el tema oscuro */
@@ -25,12 +21,12 @@
     --primary-foreground: 213 31% 91%;
     --border: 217 33% 20%;
     --social-foreground: 213 31% 75%; /* Blanco/Gris claro para el tema oscuro */
-    --social-background: rgba(
+    --social-background: hsl(
       0,
-      0,
-      0,
-      0.4
+      0%,
+      8%
     ); /* Fondo semi-transparente para el tema oscuro */
+    --text-gray: 0, 0%, 70%;
   }
 
   /* Aplica clases de Tailwind a elementos nativos */
@@ -187,16 +183,12 @@
     border-radius: 10px;
   }
   .social-button:hover {
-    background: linear-gradient(
-      to right,
-      hsl(var(--social-background)),
-      hsl(var(--social-background))
-    );
+    background: transparent;
     background-clip: padding-box;
-    color: hsl(var(--social-background));
+    color: hsl(var(--social-foreground));
     position: relative;
     transition-duration: 300ms;
-
+    text-shadow: 1px 1px 10px hsl(var(--foreground));
     border-radius: 10px;
   }
 }

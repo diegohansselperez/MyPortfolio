@@ -38,6 +38,7 @@ export function Home() {
         <AboutMe />
         <Skills />
         <Proyects />
+        <Contact />
       </main>
     </div>
   );
@@ -49,6 +50,6 @@ export default Home;
             
             <Skills />
             <Proyectos />
-            <Contact />
+            
             <Footer/> */
 }

@@ -1,10 +1,10 @@
-import LiteraryCorner from '../src/assets/img/LiteraryCorner.png';
-import YearSale from '../src/assets/img/captura_Yearsale.png';
-import Homework from '../src/assets/img/captura_homework-list.png';
-import BadBear from '../src/assets/img/captura_bear_bad_studio.png';
-import Videogames from '../src/assets/img/PI_Henry.png';
+import LiteraryCorner from './images/LiteraryCorner.png';
+import YearSale from './images/captura_Yearsale.png';
+import Homework from './images/captura_homework-list.png';
+import BadBear from './images/captura_bear_bad_studio.png';
+import Videogames from './images/PI_Henry.png';
 
-export default [
+export const meProyects = [
   {
     id: 1,
     title: 'Literary Corner',

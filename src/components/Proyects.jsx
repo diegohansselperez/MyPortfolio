@@ -1,5 +1,5 @@
 import { ArrowRight, ExternalLink, Github } from 'lucide-react';
-import proyects from '../proyects.js';
+import { meProyects } from '../proyects.js';
 
 function Proyects() {
   return (
@@ -15,54 +15,55 @@ function Proyects() {
         </p>
         {/* Cards Proyects */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  ">
-          {proyects.map((project, key) => (
-            <article
-              key={key}
-              className="group flex flex-col justify-between bg-[hsla(var(--card))] rounded-lg overflow-hidden shadow-2xl text-center"
-            >
-              <div className="h-48 overflow-hidden">
-                <img
-                  src={project.img}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="pt-6 px-6 pb-2">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((proyect, key) => (
-                    <span
-                      key={key}
-                      className="px-2 py-1 text-xs font-medium border rounded-2xl bg-[hsl(var(--primary))/0.2] text-[hsl(var(--social-foreground))] "
+          {meProyects &&
+            meProyects.map((project, key) => (
+              <article
+                key={key}
+                className="group flex flex-col justify-between bg-[hsla(var(--card))] rounded-lg overflow-hidden shadow-2xl text-center"
+              >
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src={project.img}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+                <div className="pt-6 px-6 pb-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.map((proyect, key) => (
+                      <span
+                        key={key}
+                        className="px-2 py-1 text-xs font-medium border rounded-2xl bg-[hsl(var(--primary))/0.2] text-[hsl(var(--social-foreground))] "
+                      >
+                        {proyect}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                <p className="text-muted-[hsl(var(--foreground))] text-sm mb-4">
+                  Description here
+                </p>
+                <div className="flex justify-start items-end">
+                  <div className="flex items-end ">
+                    <a
+                      href={project.demoUrl}
+                      className="text-sm  text-[hsl(var(--foreground))] hover:text-[hsl(var(--primary))] transition duration-300 flex items-center gap-1 mb-2 ml-2"
                     >
-                      {proyect}
-                    </span>
-                  ))}
+                      <ExternalLink size={24} />
+                      <span>Web Site</span>
+                    </a>
+                    <a
+                      className="text-sm  text-[hsl(var(--foreground))] hover:text-[hsl(var(--primary))] transition duration-300 flex items-center gap-1 mb-2 ml-2"
+                      href={project.githubUrl}
+                    >
+                      <Github size={24} />
+                      <span>Repository</span>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-              <p className="text-muted-[hsl(var(--foreground))] text-sm mb-4">
-                Description here
-              </p>
-              <div className="flex justify-start items-end">
-                <div className="flex items-end ">
-                  <a
-                    href={project.demoUrl}
-                    className="text-sm  text-[hsl(var(--foreground))] hover:text-[hsl(var(--primary))] transition duration-300 flex items-center gap-1 mb-2 ml-2"
-                  >
-                    <ExternalLink size={24} />
-                    <span>Web Site</span>
-                  </a>
-                  <a
-                    className="text-sm  text-[hsl(var(--foreground))] hover:text-[hsl(var(--primary))] transition duration-300 flex items-center gap-1 mb-2 ml-2"
-                    href={project.githubUrl}
-                  >
-                    <Github size={24} />
-                    <span>Repository</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            ))}
         </div>
         <div className="text-center mt-12">
           <a
