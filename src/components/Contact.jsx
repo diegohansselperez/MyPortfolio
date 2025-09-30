@@ -5,13 +5,14 @@ import {
   Mail,
   MapPinned,
   Phone,
+  Send,
 } from 'lucide-react';
 
 export function Contact() {
   return (
     <section
       id="contact_section"
-      className="py-24 px-4 relative bg-[hsl(var(--secondary))/0.3]"
+      className="py-24 px-4 relative  bg-[hsl(var(--secondary))/0.3]"
     >
       <div className=" container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
@@ -22,9 +23,13 @@ export function Contact() {
           I'm always open to discussing new opportunities.
         </p>
       </div>
-      <div className="grid justify-center grid-cols-1 md:grid-cols-2 gap-12">
-        <div className="space-y-4">
-          <h3 className="text-2xl font-semibold mb-6b ">Contact Information</h3>
+      {/* ------------------Container------------------  */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* -------------Contact Information------------- */}
+        <div className="space-y-4 p-5 ">
+          <h3 className="text-2xl text-center font-semibold mb-6 ">
+            Contact Information
+          </h3>
           <div className="space-y-6 justify-center">
             <div className="flex items-start space-x-4">
               <div className="p-3 rounded-full bg-gray-600/10">
@@ -71,60 +76,99 @@ export function Contact() {
             </div>
           </div>
         </div>
-        {/* Formulario de Contacto */}
-        <div className="pt-8 text-center">
-          <h3 className="font-medium mb-4">Conect with Me</h3>
+        {/* ----------------Redes Sociales------------------ */}
+        <div className=" p-5 text-center ">
+          <h3 className="text-2xl font-semibold mb-6">Conect with Me</h3>
           <div className="flex space-x-4 justify-center ">
             <a
               href=""
               className="transition-all duration-200 hover:text-[hsl(var(--primary))] font-semibold"
               target="_blank"
             >
-              <Facebook />
+              <Facebook size={27} />
             </a>
-            <a href="">
-              <Linkedin />
+            <a
+              href=""
+              className="transition-all duration-200 hover:text-[hsl(var(--primary))] font-semibold"
+              target="_blank"
+            >
+              <Linkedin size={27} />
             </a>
-            <a href="">
-              <Instagram />
+            <a
+              href=""
+              className="transition-all duration-200 hover:text-[hsl(var(--primary))] font-semibold"
+              target="_blank"
+            >
+              <Instagram size={27} />
             </a>
           </div>
         </div>
-        <div className="bg-[hsl(var(--card))]">
-          <h3>Send a Message</h3>
-        </div>
-      </div>
-    </section>
-  );
-}
-{
-  /* <form
-              action="https://formsubmit.co/diegohansselp24@gmail.com"
-              method="POST"
-              className=""
-            >
+        {/* ------------Formulario de Contacto---------------- */}
+        <div className="bg-[hsl(var(--card))]  rounded-lg shadow-xs p-5">
+          <h3 className="text-2xl text-center font-semibold mb-6">
+            Contact to my Email
+          </h3>
+          <form
+            action="https://formsubmit.co/diegohansselp24@gmail.com"
+            method="POST"
+            className="space-y-8"
+          >
+            <article>
               <label htmlFor="name">
-                <input required name="name" type="text" placeholder="Nombre" />
+                <input
+                  className="w-full px-4 py-3 rounded-md border border-input bg-[hsl(var(--background))] focus:outline-hidden focus:ring-2 focus:ring-[hsl(var(--primary))] "
+                  required
+                  id="name"
+                  name="name"
+                  type="text"
+                  maxLength={40}
+                  placeholder="diego hanssel perez..."
+                />
               </label>
+            </article>
+            <article>
               <label htmlFor="email">
-                <input required name="email" type="email" placeholder="Email" />
+                <input
+                  id="email"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-[hsl(var(--background))] focus:outline-hidden focus:ring-2 focus:ring-[hsl(var(--primary))] "
+                  required
+                  name="email"
+                  maxLength={35}
+                  type="email"
+                  placeholder="example123@gmail.com"
+                />
               </label>
+            </article>
+            <article>
               <label htmlFor="comment">
                 <textarea
+                  id="comment"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-[hsl(var(--background))] focus:outline-hidden focus:ring-2 focus:ring-[hsl(var(--primary))] "
                   name="comment"
                   required
-                  placeholder="Escribe un mensaje..."
+                  placeholder="write your message..."
                   rows="10"
                   style={{
                     resize: 'none',
                     height: '150px',
-                    fontFamily: 'Helvetica',
                   }}
                 ></textarea>
               </label>
-              <div>
-                <input className="" type="submit" />
-                <input type="hidden" name="_subject" value="Mi Portfolio" />
-              </div>
-            </form> */
+            </article>
+
+            <div>
+              <button
+                className="cosmic-button w-full flex justify-center items-center gap-2"
+                type="submit"
+              >
+                Send Message <Send size={20} />
+              </button>
+
+              <input type="hidden" name="_subject" value="Mi Portfolio" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  );
 }
