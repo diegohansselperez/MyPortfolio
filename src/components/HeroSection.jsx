@@ -5,7 +5,7 @@ import { ChevronsDown, Github, Linkedin, Mail } from 'lucide-react';
 const HeroSection = () => {
   return (
     <section
-      id="hero"
+      id="/"
       className="relative min-h-screen flex flex-col justify-center items-center space-y-8"
     >
       <div className="container mx-auto text-center z-10">
@@ -56,8 +56,7 @@ const HeroSection = () => {
           <span className="text-lg font-sm mb-1">View My Work</span>
           <ChevronsDown
             size={24}
-            color="rgb(94,23,235, 70%)"
-            className="animate-float"
+            className="animate-float text-[hsl(var(--primary))]"
           />
         </a>
       </div>

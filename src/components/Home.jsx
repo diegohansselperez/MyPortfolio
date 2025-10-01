@@ -26,11 +26,11 @@ export function Home() {
     }
   };
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <div className="min-h-screen relative bg-[hsl(var(--background))] text-[hsl(var(--foreground))] overflow-x-hidden">
       <ThemeToggle />
       {/* Fondo Estrellado */}
       <StarBackground />
-      {/* Navbar Desktop and Mobilke*/}
+      {/* Navbar Desktop and Mobile*/}
       <Navbar />
       {/* Main Content*/}
       <main>
@@ -40,6 +40,7 @@ export function Home() {
         <Proyects />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
@@ -51,5 +52,5 @@ export default Home;
             <Skills />
             <Proyectos />
             
-            <Footer/> */
+             */
 }

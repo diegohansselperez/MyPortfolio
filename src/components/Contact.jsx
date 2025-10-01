@@ -1,17 +1,9 @@
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPinned,
-  Phone,
-  Send,
-} from 'lucide-react';
+import { Facebook, Linkedin, Mail, MapPinned, Phone, Send } from 'lucide-react';
 
 export function Contact() {
   return (
     <section
-      id="contact_section"
+      id="contact"
       className="py-24 px-4 relative  bg-[hsl(var(--secondary))/0.3]"
     >
       <div className=" container mx-auto max-w-5xl">
@@ -77,29 +69,32 @@ export function Contact() {
           </div>
         </div>
         {/* ----------------Redes Sociales------------------ */}
-        <div className=" p-5 text-center ">
+        <div className=" p-5 text-center  ">
           <h3 className="text-2xl font-semibold mb-6">Conect with Me</h3>
-          <div className="flex space-x-4 justify-center ">
+          <div className="flex md:flex-col md:space-y-5 md:items-center space-x-4 justify-center ">
             <a
               href=""
-              className="transition-all duration-200 hover:text-[hsl(var(--primary))] font-semibold"
+              className="transition-all flex items-center text-[hsl(var(--foreground))]/70 duration-200 hover:text-[hsl(var(--primary))] font-semibold"
               target="_blank"
             >
               <Facebook size={27} />
+              <span className="hidden md:block">/diegohansselperez</span>
             </a>
             <a
               href=""
-              className="transition-all duration-200 hover:text-[hsl(var(--primary))] font-semibold"
+              className="transition-all flex items-center gap-2 duration-200 text-[hsl(var(--foreground))]/70 hover:text-[hsl(var(--primary))] font-semibold md:mb-5"
               target="_blank"
             >
               <Linkedin size={27} />
+              <span className="hidden md:block">/hansselperez/</span>
             </a>
             <a
               href=""
-              className="transition-all duration-200 hover:text-[hsl(var(--primary))] font-semibold"
+              className="transition-all flex items-center duration-200 text-[hsl(var(--foreground))]/70 hover:text-[hsl(var(--primary))] font-semibold"
               target="_blank"
             >
-              <Instagram size={27} />
+              <i class="fa-brands fa-x-twitter fa-xl"></i>
+              <span className="hidden md:block">@HansselPerez24</span>
             </a>
           </div>
         </div>
@@ -116,13 +111,13 @@ export function Contact() {
             <article>
               <label htmlFor="name">
                 <input
-                  className="w-full px-4 py-3 rounded-md border border-input bg-[hsl(var(--background))] focus:outline-hidden focus:ring-2 focus:ring-[hsl(var(--primary))] "
+                  className="w-full text-[18px] text-white placeholder:text-[hsl(var(--text-gray))] px-4 py-3 rounded-md border border-input bg-[hsl(var(--background))] focus:outline-hidden focus:ring-2 focus:ring-[hsl(var(--primary))] "
                   required
                   id="name"
                   name="name"
                   type="text"
                   maxLength={40}
-                  placeholder="diego hanssel perez..."
+                  placeholder="your name..."
                 />
               </label>
             </article>
@@ -130,7 +125,7 @@ export function Contact() {
               <label htmlFor="email">
                 <input
                   id="email"
-                  className="w-full px-4 py-3 rounded-md border border-input bg-[hsl(var(--background))] focus:outline-hidden focus:ring-2 focus:ring-[hsl(var(--primary))] "
+                  className="w-full placeholder:text-[hsl(var(--text-gray))] px-4 py-3 rounded-md border border-input bg-[hsl(var(--background))] focus:outline-hidden focus:ring-2 focus:ring-[hsl(var(--primary))] "
                   required
                   name="email"
                   maxLength={35}
@@ -143,7 +138,7 @@ export function Contact() {
               <label htmlFor="comment">
                 <textarea
                   id="comment"
-                  className="w-full px-4 py-3 rounded-md border border-input bg-[hsl(var(--background))] focus:outline-hidden focus:ring-2 focus:ring-[hsl(var(--primary))] "
+                  className="w-full placeholder:text-[hsl(var(--text-gray))] px-4 py-3 rounded-md border border-input bg-[hsl(var(--background))] focus:outline-hidden focus:ring-2 focus:ring-[hsl(var(--primary))] "
                   name="comment"
                   required
                   placeholder="write your message..."

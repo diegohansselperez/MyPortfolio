@@ -34,7 +34,7 @@ const ThemeToggle = () => {
     isDesktop && (
       <button
         onClick={toggleThem}
-        className="fixed max-sm:hidden top-6 right-5 z-50  rounded-full transition-colors duration-600 focus:outline-hidden"
+        className="fixed max-sm:hidden cursor-pointer top-4 right-5 z-50  rounded-full transition-colors duration-600 focus:outline-hidden"
       >
         {isDarkMode ? (
           <Sun className="h-6 w-6 text-yellow-400" />

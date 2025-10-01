@@ -32,7 +32,7 @@ export function Skills() {
   );
 
   return (
-    <section id="#skills" className="relative h- py-24 px-4 bg-sencondary/30">
+    <section id="skills" className="relative h- py-24 px-4 bg-sencondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           Skills <span className="text-[hsl(var(--primary))]">Tech</span>
@@ -61,7 +61,7 @@ export function Skills() {
               <div className="text-left mb-4">
                 <h3 className="font-semibold text-lg">{skill.name}</h3>
               </div>
-              <div className="w-full bg-[hsl(var(--secondary)/0.5)] h-2 rounded-full overflow-hidden">
+              <div className="w-full bg-[hsl(var(--foreground))]/80 h-2 rounded-full overflow-hidden">
                 <div
                   className="bg-[hsl(var(--primary))] h-2 origin-left rounded-full animate-[grow_1.5s_ease-out] "
                   style={{ width: skill.level + '%' }}

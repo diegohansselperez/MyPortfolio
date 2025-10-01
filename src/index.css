@@ -3,7 +3,7 @@
   :root {
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
-    --card: 0, 0%, 100%;
+    --card: 0, 0%, 95%;
     --primary: 275, 96%, 52%;
     --primary-foreground: 210 40% 98%;
     --border: 214 32% 91%;
@@ -175,7 +175,7 @@
   }
   .social-button {
     color: hsl(var(--social-foreground));
-    background-color: hsl(var(--social-background));
+
     border: 2px solid hsl(var(--social-foreground));
     transition: all 0.3s ease;
     -webkit-backdrop-filter: blur(10px);
