@@ -145,28 +145,12 @@
   }
 
   /* Animación de flotar personalizada */
-  @keyframes float {
-    0%,
-    100% {
-      transform: translateY(10px);
-    }
-    50% {
-      transform: translateY(0px);
-    }
-  }
+
   .animate-float {
     animation: float 1s ease-in-out infinite;
   }
   /* Animación de pulso personalizado (parpadeo) */
-  @keyframes subtle-pulse {
-    0%,
-    100% {
-      opacity: 0.5;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
+
   .animate-pulse-subtle {
     animation-name: subtle-pulse;
     animation-duration: 2s;
@@ -190,5 +174,104 @@
     transition-duration: 300ms;
     text-shadow: 1px 1px 10px hsl(var(--foreground));
     border-radius: 10px;
+  }
+
+  /* ------------Loader Spinner------------ */
+  .loader {
+    display: block;
+    position: relative;
+    height: 12px;
+    width: 80%;
+    max-width: 400px; /* Le pongo un max-width para pantallas grandes */
+    background: hsl(var(--card));
+    opacity: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .loader:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: hsl(var(--primary));
+    /* Ajusté la animación para que coincida con el setTimeout de 3s */
+    animation: 3s prog ease-in forwards;
+  }
+  /* ---------------------Loader Word-------------------- */
+
+  .load_word {
+    color: hsl(var(--foreground));
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    letter-spacing: 4px;
+    box-sizing: border-box;
+  }
+  .load_word::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    right: 70px;
+    bottom: 20px;
+    height: 25px;
+    width: 5.15px;
+    background: currentColor;
+  }
+  .load_word::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 125px;
+    top: 2px;
+    border-radius: 50%;
+    background: hsl(var(--primary));
+    box-sizing: border-box;
+    animation: animloader 1s ease-in infinite;
+  }
+
+  @keyframes animloader {
+    0% {
+      transform: translateY(8px) scaleY(1) scaleX(1.25);
+    }
+    25%,
+    75% {
+      transform: translateY(-5px) scaleY(1.2) scaleX(1);
+    }
+    50% {
+      transform: translateY(-10px) scaleY(1) scaleX(1);
+    }
+    100% {
+      transform: translateY(8px) scaleY(0.8) scaleX(0.8);
+    }
+  }
+
+  @keyframes prog {
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes subtle-pulse {
+    0%,
+    100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
   }
 }

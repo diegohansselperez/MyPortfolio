@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section
       id="/"
-      className="relative min-h-screen flex flex-col justify-center items-center space-y-8"
+      className="relative h-screen flex flex-col justify-center items-center space-y-8"
     >
       <div className="container mx-auto text-center z-10">
         <div className="flex flex-col justify-center">
