@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section
       id="/"
-      className="relative h-screen flex flex-col justify-center items-center space-y-8"
+      className="relative h-screen flex flex-col justify-center p items-center space-y-8"
     >
       <div className="container mx-auto text-center z-10">
         <div className="flex flex-col justify-center">
@@ -51,7 +51,7 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center absolute bottom-4 left-1/2 -translate-x-1/2 ">
+      <div className="flex flex-col justify-center items-center absolute bottom-12 left-1/2 -translate-x-1/2 ">
         <a
           href="projects"
           className="flex flex-col justify-center items-center"
