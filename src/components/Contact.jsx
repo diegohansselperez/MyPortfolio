@@ -111,7 +111,7 @@ export function Contact() {
             <article>
               <label htmlFor="name">
                 <input
-                  className="w-full text-[18px] text-white placeholder:text-[hsl(var(--text-gray))] px-4 py-3 rounded-md border border-input bg-[hsl(var(--background))] focus:outline-hidden focus:ring-2 focus:ring-[hsl(var(--primary))] "
+                  className="w-full text-[18px] placeholder:text-[hsl(var(--text-gray))] px-4 py-3 rounded-md border border-input bg-[hsl(var(--background))] focus:outline-hidden focus:ring-2 focus:ring-[hsl(var(--primary))] "
                   required
                   id="name"
                   name="name"
@@ -141,6 +141,7 @@ export function Contact() {
                   className="w-full placeholder:text-[hsl(var(--text-gray))] px-4 py-3 rounded-md border border-input bg-[hsl(var(--background))] focus:outline-hidden focus:ring-2 focus:ring-[hsl(var(--primary))] "
                   name="comment"
                   required
+                  type="text"
                   placeholder="write your message..."
                   rows="10"
                   style={{

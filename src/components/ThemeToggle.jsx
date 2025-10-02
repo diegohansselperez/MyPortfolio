@@ -1,8 +1,8 @@
 import { Moon, Sun } from 'lucide-react';
 import React, { useState, useEffect } from 'react';
 
-const ThemeToggle = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+const ThemeToggle = (props) => {
+  const { isDarkMode, toggleThem } = props;
   const [isDesktop, setIsDesktop] = useState(false);
 
   // Esta función actualiza el estado de 'isDesktop'
@@ -19,16 +19,6 @@ const ThemeToggle = () => {
     // Función de limpieza: elimina el oyente cuando el componente se desmonta
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
-  const toggleThem = () => {
-    if (isDarkMode) {
-      document.documentElement.classList.toggle('dark');
-      setIsDarkMode(false);
-    } else {
-      document.documentElement.classList.toggle('dark');
-      setIsDarkMode(true);
-    }
-  };
 
   return (
     isDesktop && (

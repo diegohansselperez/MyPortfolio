@@ -52,7 +52,10 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center absolute bottom-4 left-1/2 -translate-x-1/2 ">
-        <a href="" className="flex flex-col justify-center items-center">
+        <a
+          href="projects"
+          className="flex flex-col justify-center items-center"
+        >
           <span className="text-lg font-sm mb-1">View My Work</span>
           <ChevronsDown
             size={24}

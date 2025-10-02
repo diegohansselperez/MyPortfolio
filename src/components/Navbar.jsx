@@ -1,6 +1,7 @@
 import { MenuIcon, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import principalLogo from '../images/dhperez_cropped.svg';
+import logo_white from '../images/dhperez_logo_white.svg';
+import logo_black from '../images/dhperez_logo_black-cropped.svg';
 
 const navItems = [
   { name: 'Home', href: '/' },
@@ -10,7 +11,7 @@ const navItems = [
   { name: 'Contact', href: 'contact' },
 ];
 
-const Navbar = () => {
+const Navbar = ({ isDarkMode }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -31,6 +32,7 @@ const Navbar = () => {
    * useEffect para manejar el cambio de estilo del Navbar al hacer scroll.
    * Añade un event listener para el scroll y una función de limpieza.
    */
+
   useEffect(() => {
     const handleSroll = () => {
       // El estado cambia a true si el scroll vertical es mayor a 10px
@@ -71,12 +73,21 @@ const Navbar = () => {
       }`}
     >
       <div className="container-app flex items-center justify-between md:justify-around">
-        <a className="flex items-center" href="#hero">
-          <img
-            className="w-25 transition-all duration-500 hover:scale-115 h-auto md:w-50 relative z-10"
-            src={principalLogo}
-            alt="dhperez_logo"
-          />
+        <a className="flex items-center" href="/">
+          {/* Cambio de Logo, si cambia el theme */}
+          {window.innerWidth < 768 ? (
+            <img
+              className="w-25 transition-all duration-500 hover:scale-115 h-auto md:w-50 relative z-10"
+              src={logo_white}
+              alt="dhperez_logo"
+            />
+          ) : (
+            <img
+              className="w-25 transition-all duration-500 hover:scale-115 h-auto md:w-50 relative z-10"
+              src={isDarkMode ? logo_white : logo_black}
+              alt="dhperez_logo"
+            />
+          )}
         </a>
 
         {/* desktop nav - Correcto */}
