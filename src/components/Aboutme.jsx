@@ -1,5 +1,6 @@
 import { Briefcase, Code, FileUser, User } from 'lucide-react';
 import imageMe from '../images/picture_me_profolio.jpg';
+import { NavLink } from 'react-router-dom';
 
 export function AboutMe() {
   return (
@@ -43,13 +44,26 @@ export function AboutMe() {
                 >
                   <span>Get In Touch</span>
                 </a>
-                <a
-                  href=""
-                  className="px-6 py-2 flex items-center justify-center rounded-[10px] border-3 border-[hsl(var(--primary))] text-[hsl(var(--primary))] hover:bg-[hsl(var(--primary)/0.3)] transition-colors duration-300"
+                <NavLink
+                  to={'/professional_pdf'}
+                  className="
+       
+        flex items-center justify-center gap-x-2 px-6 py-2 
+        rounded-[10px] border-2 border-[hsl(var(--primary))] 
+        text-[hsl(var(--primary))] font-semibold shadow-md
+
+        
+        transition-all duration-300 ease-in-out
+
+       
+        hover:bg-[hsl(var(--primary)/0.08)] 
+        hover:shadow-lg 
+        hover:-translate-y-px
+    "
                 >
                   <FileUser size={24} />
-                  <span>Download CV</span>
-                </a>
+                  <span>Watch CV</span>
+                </NavLink>
               </div>
             </div>
             {/* Skills en Tecnlololgia */}
