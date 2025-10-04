@@ -3,7 +3,7 @@ import { meProyects } from '../proyects.js';
 
 function Proyects() {
   return (
-    <section id="projects" className="py-24 px-4 relative">
+    <section id="projects" className="py-24 px-4 h-auto relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Proyects <span className="text-[hsl(var(--primary))]">Finished</span>{' '}
@@ -33,22 +33,28 @@ function Proyects() {
                     {project.tags.map((proyect, key) => (
                       <span
                         key={key}
-                        className="px-2 py-1 text-xs font-medium border rounded-2xl bg-[hsl(var(--primary))/0.2] text-[hsl(var(--social-foreground))] "
+                        className="px-2 py-1 text-xs font-medium border rounded-2xl bg-[hsl(var(--primary))]/20 text-[hsl(var(--social-foreground))] "
                       >
                         {proyect}
                       </span>
                     ))}
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                <h3 className="text-xl text-[hsl(var(--primary))] font-semibold mb-1">
+                  {project.title}
+                </h3>
                 <p className="text-muted-[hsl(var(--foreground))] text-sm mb-4">
-                  Description here
+                  {project.describe}
                 </p>
                 <div className="flex justify-start items-end">
                   <div className="flex items-end ">
                     <a
                       href={project.demoUrl}
-                      className="text-sm  text-[hsl(var(--foreground))] hover:text-[hsl(var(--primary))] transition duration-300 flex items-center gap-1 mb-2 ml-2"
+                      className={`text-sm ${
+                        project.demoUrl === '/'
+                          ? 'pointer-events-none cursor-default text-[hsl(var(--foreground))]/70'
+                          : ''
+                      }  text-[hsl(var(--foreground))] hover:text-[hsl(var(--primary))] transition duration-300 flex items-center gap-1 mb-2 ml-2`}
                     >
                       <ExternalLink size={24} />
                       <span>Web Site</span>

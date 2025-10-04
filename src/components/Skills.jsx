@@ -32,7 +32,10 @@ export function Skills() {
   );
 
   return (
-    <section id="skills" className="relative h- py-24 px-4 bg-sencondary/30">
+    <section
+      id="skills"
+      className="relative min-h-screen py-24 px-4 bg-sencondary/30"
+    >
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           Skills <span className="text-[hsl(var(--primary))]">Tech</span>
