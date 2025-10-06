@@ -68,7 +68,7 @@ const PdfViewerComponent = () => {
         <Worker workerUrl="/pdf.worker.min.js">
           <Viewer
             plugins={[toolbarPluginInstance]}
-            fileUrl={'/src/pdf/CV_Diego_Hanssel_Perez.pdf'}
+            fileUrl={'/CV_Diego_Hanssel_Perez.pdf'}
           ></Viewer>
         </Worker>
       </div>
