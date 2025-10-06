@@ -50,6 +50,7 @@ function Proyects() {
                   <div className="flex items-end ">
                     <a
                       href={project.demoUrl}
+                      target="_blank"
                       className={`text-sm ${
                         project.demoUrl === '/'
                           ? 'pointer-events-none cursor-default text-[hsl(var(--foreground))]/70'
@@ -60,6 +61,7 @@ function Proyects() {
                       <span>Web Site</span>
                     </a>
                     <a
+                      target="_blank"
                       className="text-sm  text-[hsl(var(--foreground))] hover:text-[hsl(var(--primary))] transition duration-300 flex items-center gap-1 mb-2 ml-2"
                       href={project.githubUrl}
                     >

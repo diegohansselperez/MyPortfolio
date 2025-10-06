@@ -27,15 +27,19 @@ const PdfViewerComponent = () => {
             } = props;
             console.log('number of pages:', NumberOfPages());
             return (
-              <div className="flex items-center justify-between w-full px-8">
+              <div className="flex items-center gap-2 justify-between w-full px-8">
                 {/* Grupo Izquierdo: Paginación */}
-                <a
-                  href="/"
-                  className=" flex gap-1 text-[hsl(var(--primary))] px-2 py-1 "
-                >
-                  {' '}
-                  <CornerUpLeft /> <span>to Home</span>
-                </a>
+                <div>
+                  <a
+                    href="/"
+                    className="flex gap-1 text-[hsl(var(--primary))] px-2 py-1 "
+                  >
+                    {' '}
+                    <CornerUpLeft />{' '}
+                    <span className="hidden md:block">to Home</span>
+                  </a>
+                </div>
+
                 <div className="flex items-center space-x-2">
                   <GoToPreviousPage />
                   <div className="flex gap-2 items-center">
@@ -61,7 +65,7 @@ const PdfViewerComponent = () => {
         </Toolbar>
       </div>
       <div className="flex-1 overflow-hidden">
-        <Worker workerUrl="/public/pdf.worker.min.js">
+        <Worker workerUrl="/src/scripts/pdf.worker.min.js">
           <Viewer
             plugins={[toolbarPluginInstance]}
             fileUrl={'/src/pdf/CV_Diego_Hanssel_Perez.pdf'}
