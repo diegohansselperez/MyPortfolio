@@ -65,7 +65,7 @@ const PdfViewerComponent = () => {
         </Toolbar>
       </div>
       <div className="flex-1 overflow-hidden">
-        <Worker workerUrl="/src/scripts/pdf.worker.min.js">
+        <Worker workerUrl="/pdf.worker.min.js">
           <Viewer
             plugins={[toolbarPluginInstance]}
             fileUrl={'/src/pdf/CV_Diego_Hanssel_Perez.pdf'}
