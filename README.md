@@ -1,20 +1,54 @@
-# MyPortfolio
+# My Portfolio Professional
 
-Este es el repositorio para mi portafolio personal. Aquí comparto información sobre mí, mis proyectos y mi experiencia.
+**About Me**
+A summary of my journey as a developer, my interests in the world of technology, and my goal of adding value to innovative teams.
 
-## Tecnologías utilizadas
+**Featured Projects**
+Detailed analysis of Full Stack applications that demonstrate my mastery of key technologies. Projects include:
 
-- **React.js**: Utilizado como el framework principal para el desarrollo de la interfaz de usuario.
-- **HTML**: Lenguaje de marcado utilizado para estructurar el contenido de las páginas web.
-- **CSS**: Lenguaje de estilos utilizado para dar estilo y diseño a las páginas web.
-- **JavaScript (JS)**: Lenguaje de programación utilizado para agregar interactividad y dinamismo a las páginas web.
-- **Hooks de React**: Utilizados para manejar el estado y el ciclo de vida de los componentes en React.
-- **Font Awesome**: Utilizado para incorporar iconos vectoriales y gráficos personalizables en la aplicación web.
+    - _Ecommerce Platforms_ (such as Literary Corner).
 
-## Descripción
+    - _Interactive Data Applications_ (such as PI_Henry Videogames).
 
-Este proyecto es un portafolio personal donde muestro información sobre mí, mi educación, experiencia laboral y proyectos realizados. La aplicación está construida con React.js y utiliza varias bibliotecas y herramientas populares de desarrollo web para proporcionar una experiencia de usuario fluida y atractiva.
+    - _Corporate Websites and service platforms_ (such as Bear-Bad).
 
-## Enlace al Portafolio Desplegado
+## Technical Skills
 
-El portafolio está desplegado y disponible en [diegohansselperez.vercel.app] (https://diegohansselperez.vercel.app/).
+- **React**: Used as the primary framework for developing the user interface (UI).
+
+- **HTML**: Markup language utilized to structure the content of web pages.
+
+- **CSS**: Styling language employed to provide look and design to web pages.
+
+- **JavaScript**: Programming language used to add interactivity and dynamism to web pages.
+
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
+
+- **React Hooks**: Used to manage state and lifecycle features within functional React components.
+
+- **Redux Toolkit**: Used to manage the global state of the application in a predictable and efficient manner.
+
+## Backend Tools
+
+- **Node.js**: JavaScript runtime environment used to build fast and scalable server-side applications.
+
+- **Express**: Minimalist and flexible Node.js web application framework for building APIs and server routes.
+
+- **PostgreSQL**: Robust, open-source Object-Relational Database System used for reliable data storage.
+
+- **Sequelize**: Promise-based Node.js ORM (Object-Relational Mapper) for PostgreSQL and other SQL databases, simplifying interaction with the database.
+
+- **Dotenv**: Used to load environment variables from a .env file into process.env, keeping sensitive configuration data secure.
+
+- **Cloudinary**: A cloud-based service used for managing, optimizing, and delivering images and videos for the application.
+
+- **MercadoPago**: An online payment solution integrated to handle secure transactions and payments within the e-commerce platforms.
+
+## Link Portfolio Web
+
+Link to [diegohansselperez.vercel.app] (https://diegohansselperez.vercel.app/).
+
+## Render Mobile and Desktop.
+
+[mobile_portfolio](/public/mobile_portfolio_app.png)
+[desktop_portfolio](/public/desktop_portfolio_app.png)
