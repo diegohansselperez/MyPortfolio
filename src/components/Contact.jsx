@@ -16,7 +16,7 @@ export function Contact() {
         </p>
       </div>
       {/* ------------------Container------------------  */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="flex flex-col lg:w-7xl items-center lg:grid lg:grid-cols-3 ">
         {/* -------------Contact Information------------- */}
         <div className="space-y-4 p-5 ">
           <h3 className="text-2xl text-center font-semibold mb-6 ">
@@ -69,7 +69,7 @@ export function Contact() {
           </div>
         </div>
         {/* ----------------Redes Sociales------------------ */}
-        <div className=" p-5 text-center  ">
+        <div className="p-5 pb-8 text-center  ">
           <h3 className="text-2xl font-semibold mb-6">Conect with Me</h3>
           <div className="flex md:flex-col md:space-y-5 md:items-center space-x-4 justify-center ">
             <a
@@ -99,7 +99,7 @@ export function Contact() {
           </div>
         </div>
         {/* ------------Formulario de Contacto---------------- */}
-        <div className="bg-[hsl(var(--card))]  rounded-lg shadow-xs p-5">
+        <div className="w-full md:w-lg bg-[hsl(var(--card))]  rounded-lg shadow-xs p-5">
           <h3 className="text-2xl text-center font-semibold mb-6">
             Contact to my Email
           </h3>

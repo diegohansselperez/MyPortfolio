@@ -45,10 +45,10 @@ export function Skills() {
             <button
               key={key}
               onClick={() => setActiveCategory(category)}
-              className={`py-3 px-2 rounded-full bg-[] transition-colors duration-300 capitalize ${
+              className={`py-1 px-3 rounded-full bg-[] transition-colors cursor-pointer duration-300 capitalize ${
                 activeCategory === category
                   ? 'bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))]   '
-                  : 'bg-[hsl(var(--secondary)/0.7)] text-[hsl(var(--foreground))] hover:bg-gray-600 '
+                  : 'bg-[hsl(var(--secondary)/0.7)] text-[hsl(var(--foreground))] hover:bg-gray-600 hover:text-white'
               } `}
             >
               {category}

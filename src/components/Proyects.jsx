@@ -19,7 +19,7 @@ function Proyects() {
             meProyects.map((project, key) => (
               <article
                 key={key}
-                className="group flex flex-col justify-between bg-[hsla(var(--card))] rounded-lg overflow-hidden shadow-2xl text-center"
+                className="group flex flex-col pb-2 justify-between bg-[hsla(var(--card))] rounded-lg overflow-hidden shadow-2xl text-center"
               >
                 <div className="h-48 overflow-hidden">
                   <img
@@ -43,7 +43,7 @@ function Proyects() {
                 <h3 className="text-xl text-[hsl(var(--primary))] font-semibold mb-1">
                   {project.title}
                 </h3>
-                <p className="text-muted-[hsl(var(--foreground))] text-sm mb-4">
+                <p className="text-muted-[hsl(var(--foreground))] text-sm mb-4 px-4">
                   {project.describe}
                 </p>
                 <div className="flex justify-start items-end">

@@ -40,7 +40,7 @@ export function AboutMe() {
               <div className="flex flex-col sm:flex-row gap-3 pt-3 justify-center">
                 <a
                   href="#contact"
-                  className=" flex items-center justify-center cosmic-button"
+                  className="flex items-center justify-center cosmic-button"
                 >
                   <span>Get In Touch</span>
                 </a>
@@ -49,16 +49,16 @@ export function AboutMe() {
                   className="
        
         flex items-center justify-center gap-x-2 px-6 py-2 
-        rounded-[10px] border-2 border-[hsl(var(--primary))] 
-        text-[hsl(var(--primary))] font-semibold shadow-md
+        rounded-[10px] border-2 border-[hsl(var(--primary))]/80 
+        text-[hsl(var(--primary))]/80 font-semibold shadow-md
 
         
         transition-all duration-300 ease-in-out
 
        
-        hover:bg-[hsl(var(--primary)/0.08)] 
+        
         hover:shadow-lg 
-        hover:-translate-y-px
+        hover:-translate-y-1
     "
                 >
                   <FileUser size={24} />

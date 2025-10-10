@@ -18,9 +18,8 @@ const HeroSection = () => {
           </p>
         </div>
       </div>
-      <div className="container-app flex flex-col justify-center items-center">
-        <h2 className="text-3xl font-bold">Diego Hanssel Perez</h2>
-        <span className="opacity-80">Desarrollador Full-Stack</span>
+      <div className="container-app flex flex-col justify-center items-center mb-15">
+        <h2 className="text-3xl font-semibold">Diego Hanssel Perez</h2>
       </div>
       <div className=" w-full flex justify-center ">
         <div className=" flex flex-wrap justify-between gap-3 items-center">
