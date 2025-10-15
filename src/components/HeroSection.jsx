@@ -5,7 +5,7 @@ import { ChevronsDown, Github, Linkedin, Mail } from 'lucide-react';
 const HeroSection = () => {
   return (
     <section
-      id="/"
+      id="hero"
       className="relative h-screen flex flex-col justify-center  items-center space-y-8"
     >
       <div className="container mx-auto text-center z-10">

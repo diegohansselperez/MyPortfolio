@@ -3,12 +3,19 @@ import { useEffect, useState } from 'react';
 import logo_white from '../images/dhperez_logo_white.svg';
 import logo_black from '../images/dhperez_logo_black-cropped.svg';
 
-const navItems = [
-  { name: 'Home', href: '/' },
+const navItemsDesktop = [
+  { name: 'Home', href: 'hero' },
   { name: 'About Me', href: 'aboutme' },
   { name: 'Skills', href: 'skills' },
   { name: 'Projects', href: 'projects' },
   { name: 'Contact', href: 'contact' },
+];
+const navItemsMobile = [
+  { name: 'Home', href: '#hero' },
+  { name: 'About Me', href: '#aboutme' },
+  { name: 'Skills', href: '#skills' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Contact', href: '#contact' },
 ];
 
 const Navbar = ({ isDarkMode }) => {
@@ -37,6 +44,9 @@ const Navbar = ({ isDarkMode }) => {
     const handleSroll = () => {
       // El estado cambia a true si el scroll vertical es mayor a 10px
       setIsScrolled(window.scrollY > 10);
+      if (window.scrollY > 10) {
+        setIsMenuOpen(false);
+      }
     };
 
     window.addEventListener('scroll', handleSroll);
@@ -92,7 +102,7 @@ const Navbar = ({ isDarkMode }) => {
 
         {/* desktop nav - Correcto */}
         <div className="hidden md:flex space-x-8 mr-13">
-          {navItems.map((item, key) => (
+          {navItemsDesktop.map((item, key) => (
             <a
               key={key}
               onClick={() => handleScrollToSection(item.href)}
@@ -112,28 +122,28 @@ const Navbar = ({ isDarkMode }) => {
           {isMenuOpen ? <X size={24} /> : <MenuIcon size={24} />}
         </button>
 
-        {/* Contenedor del Menú Desplegable - LÓGICA DE Z-INDEX MÁS ALTA */}
+        {/* -------------------- Contenedor del Menú Desplegable en Mobile -------------------------- */}
         <div
           className={`
-                        fixed inset-0 
-                        bg-[hsl(var(--background))]/95 backdrop-blur-md z-50 
+                        fixed inset-0  rounded-b-2xl  
+                        bg-[hsl(var(--background))] backdrop-blur-md z-50 
                         flex flex-col items-center justify-center 
                         transition-all duration-500 md:hidden 
                         ${
                           isMenuOpen
-                            ? 'opacity-100 pointer-events-auto'
+                            ? 'opacity-90 pointer-events-auto'
                             : 'opacity-0 pointer-events-none'
                         }
                     `}
         >
-          <div className="flex flex-col space-y-7 text-xl">
-            {navItems.map((item, key) => (
+          <div className=" flex flex-col space-y-5 text-xl">
+            {navItemsMobile.map((item, key) => (
               <a
                 key={key}
                 href={item.href}
                 // Agregamos un onClick para cerrar el menú al hacer click en el enlace
-                onClick={() => setIsMenuOpen(false)}
-                className="text-[hsl(var(--foreground))]/80 text-center font-normal hover:text-[hsl(var(--primary))] transition-colors duration-300"
+                onClick={() => isMenuOpen(false)}
+                className="text-[hsl(var(--foreground)/80)] text-center font-normal hover:text-[hsl(var(--primary))] transition-colors duration-300"
               >
                 {item.name}
               </a>
