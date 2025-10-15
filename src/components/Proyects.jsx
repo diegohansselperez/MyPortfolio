@@ -29,23 +29,24 @@ function Proyects() {
                   />
                 </div>
                 <div className="pt-6 px-6 pb-2">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.map((proyect, key) => (
-                      <span
-                        key={key}
-                        className="px-2 py-1 text-xs font-medium border rounded-2xl bg-[hsl(var(--primary))]/20 text-[hsl(var(--social-foreground))] "
-                      >
-                        {proyect}
-                      </span>
-                    ))}
-                  </div>
+                  <h3 className="text-xl text-[hsl(var(--primary))] font-semibold mb-1">
+                    {project.title}
+                  </h3>
+                  <p className="text-muted-[hsl(var(--foreground))] text-sm mb-4 px-4">
+                    {project.describe}
+                  </p>
                 </div>
-                <h3 className="text-xl text-[hsl(var(--primary))] font-semibold mb-1">
-                  {project.title}
-                </h3>
-                <p className="text-muted-[hsl(var(--foreground))] text-sm mb-4 px-4">
-                  {project.describe}
-                </p>
+                <div className="flex flex-wrap px-6 gap-2 mb-6">
+                  {project.tags.map((proyect, key) => (
+                    <span
+                      key={key}
+                      className="px-2 py-1 text-xs font-medium border rounded-2xl bg-[hsl(var(--primary))]/20 text-[hsl(var(--social-foreground))] "
+                    >
+                      {proyect}
+                    </span>
+                  ))}
+                </div>
+
                 <div className="flex justify-start items-end">
                   <div className="flex items-end ">
                     <a

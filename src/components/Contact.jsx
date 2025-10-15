@@ -1,4 +1,12 @@
-import { Facebook, Linkedin, Mail, MapPinned, Phone, Send } from 'lucide-react';
+import {
+  Facebook,
+  Linkedin,
+  Mail,
+  MapPinned,
+  Phone,
+  Send,
+  Twitter,
+} from 'lucide-react';
 
 export function Contact() {
   return (
@@ -93,7 +101,7 @@ export function Contact() {
               className="transition-all flex items-center duration-200 text-[hsl(var(--foreground))]/70 hover:text-[hsl(var(--primary))] font-semibold"
               target="_blank"
             >
-              <i class="fa-brands fa-x-twitter fa-xl"></i>
+              <Twitter size={27} />
               <span className="hidden md:block">@HansselPerez24</span>
             </a>
           </div>

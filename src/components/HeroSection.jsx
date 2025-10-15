@@ -24,29 +24,26 @@ const HeroSection = () => {
       <div className=" w-full flex justify-center ">
         <div className=" flex flex-wrap justify-between gap-3 items-center">
           <a
-            className="flex justify-between items-center px-2 py-1  social-button"
+            className="flex justify-between items-center  social-button"
             href="https://www.linkedin.com/in/hansselperez/"
             target="_blank"
           >
             <Linkedin size={24} />
-            <span className="ml-2 font-bold">Linkedin</span>
           </a>
 
           <a
-            className="flex justify-between items-center px-2 py-1  social-button"
+            className="flex justify-between items-center  social-button"
             href="#contact"
             target="_blank"
           >
             <Mail size={24} />
-            <span className="ml-2 font-bold">Email</span>
           </a>
           <a
-            className="flex justify-between items-center px-2 py-1  social-button"
+            className="flex justify-between items-center   social-button"
             href="https://github.com/diegohansselperez"
             target="_blank"
           >
             <Github size={24} />
-            <span className="ml-2 font-bold ">GitHub</span>
           </a>
         </div>
       </div>

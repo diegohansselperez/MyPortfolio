@@ -157,21 +157,21 @@
   }
   .social-button {
     color: hsl(var(--social-foreground));
-
-    border: 2px solid hsl(var(--social-foreground));
-    transition: all 0.3s ease;
+    border: 2px solid hsl(var(--background) / 80);
+    background-color: hsl(var(--card));
+    opacity: 100%;
+    transition: all 500ms ease;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border-radius: 10px;
+    border-radius: 100%;
+    padding: 10px;
   }
   .social-button:hover {
-    background: transparent;
     background-clip: padding-box;
-    color: hsl(var(--social-foreground));
+    color: hsl(var(--primary));
+    border: 2px solid hsl(var(--primary));
     position: relative;
-    transition-duration: 300ms;
-    text-shadow: 1px 1px 10px hsl(var(--foreground));
-    border-radius: 10px;
+    transition-duration: 1.5ms;
   }
 
   /* ------------Loader Spinner------------ */
